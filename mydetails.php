@@ -28,7 +28,7 @@ if(isset($_GET["user"]) && isset($_SESSION['email']) &&(($_GET["user"])==$_SESSI
     $user_gender = $row['gender'];
     $user_hobby = $row['hobby'];
     $user_active = $row['activated'];
-    if($user_active === '2')
+    if($user_active === '2' || $_SESSION['type'] == 'admin')
     {
         $_SESSION['active']=true;
     }
@@ -200,12 +200,13 @@ else
 <div class="data-container">
     <div class="admin">
         <?
-        if($user_type=="admin")
+        if($_SESSION['type']=="admin")
         {
-            $_SESSION['admin']="admin";
             echo '<a href="admin.php">Admin Panel</a><br>';
+            echo '<a href="edit_details.php?user=' . $_GET['user'] . '">Edit Details</a>';
         }
-        if((isset($_SESSION['active'])) && ($_SESSION['active'] === true)) {
+        else if((isset($_SESSION['active'])) && ($_SESSION['active'] === true)) {
+            //user has been activated by admin .. give him privileges
             echo '<a href="edit_details.php?user=' . $_GET['user'] . '">Edit Details</a>';
         }
         ?>

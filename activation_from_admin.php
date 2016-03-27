@@ -3,7 +3,7 @@ require_once("resources/config.php");
 
 //gets called when user clicks on the email link u send them
 
-if (isset($_GET['user']) && ($_SESSION['admin'] == "admin")) {
+if (isset($_GET['user']) && ($_SESSION['type'] == "admin")) {
 
     //sanitize the variables
     $e = escape_string($_GET['user']);

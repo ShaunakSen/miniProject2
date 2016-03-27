@@ -39,7 +39,7 @@ if (isset($_POST["e"])) {
         echo "login_failed";
         exit();
     } else {
-        $query = query("SELECT * FROM users_registered WHERE email='$e' AND activated!='0' LIMIT 1");
+        $query = query("SELECT * FROM users_registered WHERE email='$e' AND activated !='0' LIMIT 1");
         confirm($query);
         $user_check = mysqli_num_rows($query);
         $row = fetch_array($query);

@@ -13,8 +13,7 @@ else if($msg=="activation_success"){
                 <a href="login.php">Click Here to log in</a></p>';
 }
 else if($msg=="activation_from_admin_success"){
-    $message='<h2>Activation success</h2><p>Your Account is now active<br>
-                <a href="login.php">Click Here to log in</a></p>';
+    $message='<h2>Activation success</h2><p>Hi..You successfully activated the user<br><a href="admin.php">Go Back to Admin Panel</a></p>';
 }
 
 else if ($msg == "timeup")

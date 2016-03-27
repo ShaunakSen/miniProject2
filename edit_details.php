@@ -40,14 +40,13 @@ if (isset($_FILES['file']['tmp_name'])) {
     if (0 < $_FILES['file']['error']) {
         echo 'Error: ' . $_FILES['file']['error'] . '<br>';
     } else {
+        $email = $_SESSION['email'];
         move_uploaded_file($_FILES['file']['tmp_name'], $_FILES['file']['name']);
         $image = $_FILES['file']['name'];
-        $_SESSION['image'] = $image;
-        //$sql = "INSERT INTO users_registered(image) VALUE ('$image')";
-        //$query = query($sql);
-        //confirm($query);
-
-
+        $sql = "UPDATE users_registered SET image='$image' WHERE email='$email'";
+        $query=query($sql);
+        confirm($query);
+        exit();
     }
 }
 
@@ -274,7 +273,18 @@ if (isset($_POST['e'])) {
             var form_data = new FormData();
             form_data.append('file', file_data);
             alert(form_data);
-
+            $.ajax({
+                url: 'edit_details.php', // point to server-side PHP script
+                dataType: 'text',  // what to expect back from the PHP script, if anything
+                cache: false,
+                contentType: false,
+                processData: false,
+                data: form_data,
+                type: 'post',
+                success: function (php_script_response) {
+                    alert(php_script_response); // display response from the PHP script, if any
+                }
+            });
 
 
             if (document.getElementById('male').checked) {

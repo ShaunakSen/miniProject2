@@ -7,9 +7,9 @@ function redirect_to($url)
 {
     header('Location: ' . $url);
 }
-if((isset($_SESSION['email']))&&($_SESSION['admin'] == "admin"))
+if((isset($_SESSION['email']))&&($_SESSION['type'] == "admin"))
 {
-    $sql = "SELECT * FROM users_registered WHERE type='normal'";
+    $sql = "SELECT * FROM users_registered WHERE type='normal' AND activated='1'";
     $query = query($sql);
     confirm($query);
     if (mysqli_num_rows($query) > 0) {
