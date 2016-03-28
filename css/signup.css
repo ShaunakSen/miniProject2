@@ -1,6 +1,6 @@
 
 html, body { margin: 0; padding: 0;
-    overflow-x: hidden;
+
 }
 
 a:link {
@@ -23,9 +23,6 @@ a:active {
 }
 .myForm
 {
-    position: relative;
-    left: 40%;
-
 }
 .container
 {
@@ -34,11 +31,11 @@ a:active {
     height: 100%;
     background-color: #0D807A;
     width: 100%;
+
 }
 .header
 {
-    margin: 5px;
-    padding-left: 54px;
+    margin-left: 40%;
     font-size: 45px;
     font-family: 'Lato', Calibri, Arial, sans-serif;
     color: #DADADA;
