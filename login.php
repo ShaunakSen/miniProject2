@@ -8,7 +8,6 @@ function redirect_to($url)
 }
 
 
-
 ?>
 <?php
 if (isset($_SESSION["email"])) {
@@ -132,7 +131,6 @@ if (isset($_POST["e"])) {
         }
 
 
-
         function login() {
             var e = _("email").value;
             var p = _("password").value;
@@ -160,14 +158,11 @@ if (isset($_POST["e"])) {
                         }
 
 
-
                     }
                 }
                 ajax.send("e=" + e + "&p=" + p);
             }
         }
-
-
 
 
     </script>
@@ -210,23 +205,37 @@ if (isset($_POST["e"])) {
 
         <div class="header">
             <br>
-            Log IN
+            Log In
         </div>
         <br><br>
-        <div class="caption">Enter Your Email Id Here</div>
-        <input type="email" class="input" id="email" name="email" onkeyup="restrict('email')" placeholder="Email Id">
+
+        <div class="row">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4">
+                <div class="caption">Enter Your Email Id Here</div>
+                <input type="email" class="input" id="email" name="email" onkeyup="restrict('email')"
+                       placeholder="Email Id">
+                <br>
+
+                <div id="emailstatus"></div>
+            </div>
+            <div class="col-sm-4"></div>
+        </div>
         <br>
 
-        <div id="emailstatus"></div>
-        <br>
-
-        <div class="caption">Enter Password</div>
-        <input type="password" class="input" id="password" name="password" placeholder="Enter Password">
-        <br><br><br>
-        <button class="submit" id="submit" onclick="login()">Submit</button>
-        <br><br><br><br><br><br><br><br><br><br><br><br>
-
-        <div id="status"></div>
+        <div class="row">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4">
+                <div class="caption">Enter Password</div>
+                <input type="password" class="input" id="password" name="password" placeholder="Enter Password">
+                <br><br><br>
+                <button class="submit" id="submit" onclick="login()">Submit</button>
+                <br><br>
+                <div id="status"></div>
+                <br><br><br><br><br><br><br><br><br><br>
+            </div>
+            <div class="col-sm-4"></div>
+        </div>
     </form>
 </div>
 </body>

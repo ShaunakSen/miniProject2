@@ -7,12 +7,9 @@ function redirect_to($url)
     header('Location: ' . $url);
 }
 
-if(!(isset($_GET['user'])) || ($_SESSION['active']!==true))
-{
+if (!(isset($_GET['user'])) || ($_SESSION['active'] !== true)) {
     redirect_to("index.php");
-}
-else
-{
+} else {
     $email = $_GET['user'];
     $sql = "SELECT * FROM users_registered WHERE email='$email' LIMIT 1";
     $query = query($sql);
@@ -28,11 +25,11 @@ else
     $user_roll = $row['roll_no'];
     $user_phone = $row['phone_number'];
     $user_dob = $row['dob'];
-    $user_dept=$row['dept'];
+    $user_dept = $row['dept'];
     $user_gender = $row['gender'];
     $user_hobby = $row['hobby'];
     $user_year_of_admission = "20";
-    $user_year_of_admission = $user_year_of_admission . substr($user_roll,0,2);
+    $user_year_of_admission = $user_year_of_admission . substr($user_roll, 0, 2);
 
 }
 
@@ -44,7 +41,7 @@ if (isset($_FILES['file']['tmp_name'])) {
         move_uploaded_file($_FILES['file']['tmp_name'], $_FILES['file']['name']);
         $image = $_FILES['file']['name'];
         $sql = "UPDATE users_registered SET image='$image' WHERE email='$email'";
-        $query=query($sql);
+        $query = query($sql);
         confirm($query);
         exit();
     }
@@ -69,8 +66,7 @@ if (isset($_POST['e'])) {
         echo "The form submission is missing values.";
         exit();
 
-    }
-    else if (strlen($pass) <= 7) {
+    } else if (strlen($pass) <= 7) {
         echo "your password is too short";
         exit();
 
@@ -241,12 +237,10 @@ if (isset($_POST['e'])) {
             if ((pass1 != pass2) && (pass1 != "") && (pass2 != "")) {
                 _("password-status").innerHTML = "<span style='color: #802928; font-family: 'Droid Sans', Helvetica, Arial, sans-serif'>Passwords do not match</span>";
             }
-            else
-            {
+            else {
                 stupid("password2");
             }
         }
-
 
 
         function edit_details() {
@@ -333,7 +327,7 @@ if (isset($_POST['e'])) {
         function stupid(passedId) {
 
 
-            var myId = ["firstname", "lastname", "email", "phone", "dept", "year", "roll", "date", "sortpicture", "password", "password2","submit"];
+            var myId = ["firstname", "lastname", "email", "phone", "dept", "year", "roll", "date", "sortpicture", "password", "password2", "submit"];
             for (var i = 0; i < myId.length; ++i) {
                 if (myId[i] == passedId)
                     break;
@@ -387,112 +381,173 @@ if (isset($_POST['e'])) {
 
         <div class="header">
             <br>
-            Sign Up
+            Edit Details
         </div>
         <br><br>
 
-        <div class="caption">Enter First Name Here</div>
-        <input type="text" class="input" id="firstname" name="firstname" onkeyup="restrict('firstname')"
-               placeholder="First Name" onblur="stupid('firstname')" value="<? echo $user_first_name;?>">
-        <br><br>
-
-        <div class="caption">Enter Last Name Here</div>
-        <input type="text" class="input" id="lastname" name="lastname" onkeyup="restrict('lastname')"
-               placeholder="Last Name" value="<? echo $user_last_name ?>" ">
-        <br><br>
-
-        <div class="caption">Enter Your Email Id Here</div>
-        <input type="email" class="input" id="email" name="email" onkeyup="restrict('email')" onblur="checkEmail()"
-               placeholder="Email Id" value="<? echo $user_email ?>"disabled >
-        <br>
-
-        <div id="emailstatus"></div>
-        <br>
-
-        <div class="caption">Enter Your Phone Number Here</div>
-        <input type="tel" class="input" id="phone" name="email" onkeyup="restrict('phone')"
-               onblur="validate_number_length()" placeholder="Phone Number" value="<? echo $user_phone ?>">
-        <br>
-        <br>
-
-        <div id="phone_length_status"></div>
-        <br>
-
-        <div class="caption">Select Your Department Code</div>
-        <select name="select" id="dept" class="department" onblur="run()">
-            <option value="">Select your Department</option>
-            <option value="BT" <? if($user_dept=="BT") echo " selected" ?>>BT</option>
-            <option value="CE" <? if($user_dept=="CE") echo " selected" ?>>CE</option>
-            <option value="CH" <? if($user_dept=="CH") echo " selected" ?>>CH</option>
-            <option value="EC" <? if($user_dept=="EC") echo " selected" ?>>EC</option>
-            <option value="EE" <? if($user_dept=="EE") echo " selected" ?>>EE</option>
-            <option value="IT" <? if($user_dept=="IT") echo " selected" ?>>IT</option>
-            <option value="ME" <? if($user_dept=="ME") echo " selected" ?>>ME</option>
-            <option value="MME" <? if($user_dept=="MME") echo " selected" ?>>MME</option>
-        </select>
-        <br><br>
-
-        <div class="caption">Enter Your Year of Admission</div>
-        <input type="number" id="year" class="admission-year" name="year" min="2011" max="2015" onblur="run()" value="<? echo $user_year_of_admission?>">
-        <br><br>
-
-        <div class="caption">Enter Your Roll Number</div>
-        <input type="text" class="input" id="roll" name="rollno" onblur="stupid('roll')" value="<?echo $user_roll?>">
-        <br><br>
-
-        <div class="caption">Enter Your Birth Date</div>
-        <input type="date" class="date" id="date" name="date" onblur="calculateDOB()" value="<? echo $user_dob?>">
-        <br><br>
-
-        <div id="age_calculated">Your calculated age shows here</div>
-
-
-        <div class="caption">Please Upload Your Profile Picture</div>
-        <input type="file" name="pic" class="upload" id="sortpicture" accept="image/*" disabled onblur="stupid('sortpicture')">
-
-        <br><br>
-
-        <img id="blah" style="display: none" src="#" alt="image" width="200" height="100">
-
-        <div class="caption">Select Your Hobbies</div>
-        <div id="hobbies">
-            <input type="checkbox" name="hobby[]" class="hobby" value="reading novels"><span
-                style="color: #D0D0D0;font-size: 19px;position: relative;bottom: 5px;font-family: Ubuntu, sans-serif;font-weight: 200;">Reading Novels</span><br>
-            <input type="checkbox" name="hobby[]" class="hobby" value="playing cricket"><span
-                style="color: #D0D0D0;font-size: 19px;position: relative;bottom: 5px;font-family: Ubuntu, sans-serif;font-weight: 200;">Playing Cricket</span><br>
-            <input type="checkbox" name="hobby[]" class="hobby" value="playing music"><span
-                style="color: #D0D0D0;font-size: 19px;position: relative;bottom: 5px;font-family: Ubuntu, sans-serif;font-weight: 200;">Playing Music</span><br>
-            <input type="checkbox" name="hobby[]" class="hobby" value="hanging out with friends"><span
-                style="color: #D0D0D0;font-size: 19px;position: relative;bottom: 5px;font-family: Ubuntu, sans-serif;font-weight: 200;">Hanging out with friends</span><br>
-
-            <div id="demo"></div>
-            <br><br>
+        <div class="row">
+            <div class="col-sm-2"></div>
+            <div class="col-sm-4">
+                <div class="caption">Enter First Name Here</div>
+                <input type="text" class="input" id="firstname" name="firstname" onkeyup="restrict('firstname')"
+                       placeholder="First Name" onblur="stupid('firstname')" value="<? echo $user_first_name; ?>">
+                <br><br>
+            </div>
+            <div class="col-sm-4">
+                <div class="caption">Enter Last Name Here</div>
+                <input type="text" class="input" id="lastname" name="lastname" onkeyup="restrict('lastname')"
+                       placeholder="Last Name" disabled onblur="stupid('lastname')" value="<? echo $user_last_name; ?>">
+            </div>
+            <div class="col-sm-2"></div>
         </div>
-        <div id="add-hobby" onclick="addHobby()">Add a Hobby</div>
-
-        <div class="caption">Select Your Gender</div>
-        <input type="radio" name="gender" class="gender" value="male" id="male" <? if($user_gender=="male") echo "checked" ?>> <span
-            style="color: #D0D0D0;font-size: 19px;position: relative;bottom: 5px;font-family: Ubuntu, sans-serif;font-weight: 200;">Male</span><br>
-        <input type="radio" name="gender" class="gender" value="female" id="female" <? if($user_gender=="female") echo "checked" ?>><span
-            style="color: #D0D0D0;font-size: 19px;position: relative;bottom: 5px;font-family: Ubuntu, sans-serif;font-weight: 200;">Female</span><br>
-
-        <div class="caption">Enter Password</div>
-        <input type="password" class="input" id="password" name="password" placeholder="Enter Password" onblur="stupid('password') ">
         <br><br>
 
-        <div class="caption">Confirm Password</div>
-        <input type="password" class="input" id="password2" name="password" onblur="confirmPassword()"
-               onfocus="emptyElement('password-status')" placeholder="Confirm Password">
-        <br>
+        <div class="row">
+            <div class="col-sm-2"></div>
+            <div class="col-sm-4">
+                <div class="caption">Enter Your Email Id Here</div>
+                <input type="email" class="input" id="email" name="email" onkeyup="restrict('email')"
+                       onblur="checkEmail()"
+                       placeholder="Email Id" value="<? echo $user_email; ?>">
+                <br>
 
-        <div id="password-status"></div>
-        <br>
+                <div id="emailstatus"></div>
+                <br>
+            </div>
+            <div class="col-sm-4">
+                <div class="caption">Enter Your Phone Number Here</div>
+                <input type="tel" class="input" id="phone" name="email" onkeyup="restrict('phone')"
+                       onblur="validate_number_length()" placeholder="Phone Number" value="<? echo $user_phone; ?>">
+                <br>
+                <br>
 
-        <button class="submit" id="submit" onclick="edit_details()" >Submit</button>
+                <div id="phone_length_status"></div>
+                <br>
+            </div>
+            <div class="col-sm-2"></div>
+        </div>
+        <div class="row">
+            <div class="col-sm-2"></div>
+            <div class="col-sm-4">
+                <div class="caption">Select Your Department Code</div>
+                <select name="select" id="dept" class="department" onblur="run()">
+                    <option value="">Select your Department</option>
+                    <option value="BT" <? if ($user_dept == "BT") echo " selected" ?>>BT</option>
+                    <option value="CE" <? if ($user_dept == "CE") echo " selected" ?>>CE</option>
+                    <option value="CH" <? if ($user_dept == "CH") echo " selected" ?>>CH</option>
+                    <option value="EC" <? if ($user_dept == "EC") echo " selected" ?>>EC</option>
+                    <option value="EE" <? if ($user_dept == "EE") echo " selected" ?>>EE</option>
+                    <option value="IT" <? if ($user_dept == "IT") echo " selected" ?>>IT</option>
+                    <option value="ME" <? if ($user_dept == "ME") echo " selected" ?>>ME</option>
+                    <option value="MME" <? if ($user_dept == "MME") echo " selected" ?>>MME</option>
+                </select>
+                <br><br>
+            </div>
+            <div class="col-sm-4">
+                <div class="caption">Enter Your Year of Admission</div>
+                <input type="number" id="year" class="admission-year" name="year" min="2011" max="2015" onblur="run()"
+                       value="<? echo $user_year_of_admission ?>">
+                <br><br>
+            </div>
+            <div class="col-sm-2"></div>
+        </div>
+        <div class="row">
+            <div class="col-sm-2"></div>
+            <div class="col-sm-4">
+                <div class="caption">Enter Your Roll Number</div>
+                <input type="text" class="input" id="roll" name="rollno" onblur="stupid('roll')"
+                       value="<? echo $user_roll ?>">
+            </div>
+            <div class="col-sm-4">
+                <div class="caption">Enter Your Birth Date</div>
+                <input type="date" class="date" id="date" name="date" onblur="calculateDOB()"
+                       value="<? echo $user_dob ?>">
+                <br><br>
+
+                <div id="age_calculated">Your calculated age shows here</div>
+                <div class="col-sm-2"></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-2"></div>
+            <div class="col-sm-4">
+                <div class="caption">Please Upload Your Profile Picture</div>
+                <input type="file" name="pic" class="upload" id="sortpicture" accept="image/*" disabled
+                       onblur="stupid('sortpicture')">
+
+                <br>
+
+                <div class="caption">Select Your Gender</div>
+                <input type="radio" name="gender" class="gender" value="male"
+                       id="male" <? if ($user_gender == "male") echo "checked" ?>> <span
+                    style="color: #D0D0D0;font-size: 19px;position: relative;bottom: 5px;font-family: Ubuntu, sans-serif;font-weight: 200;">Male</span><br>
+                <input type="radio" name="gender" class="gender" value="female"
+                       id="female" <? if ($user_gender == "female") echo "checked" ?>><span
+                    style="color: #D0D0D0;font-size: 19px;position: relative;bottom: 5px;font-family: Ubuntu, sans-serif;font-weight: 200;">Female</span><br>
+
+
+                <img id="blah" style="display: none" src="#" alt="image" width="200" height="100">
+            </div>
+            <div class="col-sm-4">
+                <div class="caption">Select Your Hobbies</div>
+                <div id="hobbies">
+                    <input type="checkbox" name="hobby[]" class="hobby" value="reading novels"><span
+                        style="color: #D0D0D0;font-size: 19px;position: relative;bottom: 5px;font-family: Ubuntu, sans-serif;font-weight: 200;">Reading Novels</span><br>
+                    <input type="checkbox" name="hobby[]" class="hobby" value="playing cricket"><span
+                        style="color: #D0D0D0;font-size: 19px;position: relative;bottom: 5px;font-family: Ubuntu, sans-serif;font-weight: 200;">Playing Cricket</span><br>
+                    <input type="checkbox" name="hobby[]" class="hobby" value="playing music"><span
+                        style="color: #D0D0D0;font-size: 19px;position: relative;bottom: 5px;font-family: Ubuntu, sans-serif;font-weight: 200;">Playing Music</span><br>
+                    <input type="checkbox" name="hobby[]" class="hobby" value="hanging out with friends"><span
+                        style="color: #D0D0D0;font-size: 19px;position: relative;bottom: 5px;font-family: Ubuntu, sans-serif;font-weight: 200;">Hanging out with friends</span><br>
+
+                    <div id="demo"></div>
+                    <br><br>
+                </div>
+                <div id="add-hobby" onclick="addHobby()">Add a Hobby</div>
+            </div>
+            <div class="col-sm-2"></div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-sm-2"></div>
+            <div class="col-sm-4">
+                <div class="caption">Enter Password</div>
+                <input type="password" class="input" id="password" name="password" placeholder="Enter Password" disabled
+                       onblur="stupid('password')">
+            </div>
+            <div class="col-sm-4">
+                <div class="caption">Confirm Password</div>
+                <input type="password" class="input" id="password2" name="password" onblur="confirmPassword()"
+                       onfocus="emptyElement('password-status')" placeholder="Enter Password" disabled>
+                <br>
+
+                <div id="password-status"></div>
+            </div>
+            <div class="col-sm-2"></div>
+        </div>
         <br><br>
+        <div class="row">
+            <div class="col-sm-2"></div>
+            <div class="col-sm-4">
+                <div class="submit" id="submit" onclick="edit_details()">Submit</div>
+            </div>
 
-        <div id="status"></div>
+            <div class="col-sm-4">
+                <input type="reset" value="Reset" class="submit">
+            </div>
+            <div class="col-sm-2"></div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4">
+                <div id="status"></div>
+
+            </div>
+            <div class="col-sm-4"></div>
+        </div>
     </form>
+    <br><br>
 </div>
 
 <script>

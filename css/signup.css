@@ -154,6 +154,7 @@ a:active {
     margin-left: 68px;
     transition: all 0.3s ease-in-out;
     cursor: pointer;
+    border: 0!important;
 }
 
 .submit:hover
@@ -197,3 +198,15 @@ a:active {
 .navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
     color: #fff !important;
     background-color: #0081ae; }
+
+#status
+{
+    font-family: "Ubuntu",sans-serif;
+    font-size: 18px;
+    width:220px;
+    text-align: center;
+    border-radius: 20px;
+    background-color: #E49494;
+    margin-left: 50px;
+    color: #484848;
+}

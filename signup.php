@@ -404,7 +404,7 @@ if (isset($_POST["emailcheck"])) {
             </div>
             <div id="navbar" class="collapse navbar-collapse">
                 <ul class="nav navbar-nav">
-                    <li class="active"><a href="index.html">Home</a></li>
+                    <li class=""><a href="index.php">Home</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="services.html">Services</a></li>
                     <li><a href="blog.html">Blog</a></li>
@@ -570,7 +570,7 @@ if (isset($_POST["emailcheck"])) {
         <div class="row">
             <div class="col-sm-2"></div>
             <div class="col-sm-4">
-                <button class="submit" id="submit" onclick="signup()">Submit</button>
+                <div class="submit" id="submit" onclick="signup()">Submit</div>
             </div>
 
             <div class="col-sm-4">
