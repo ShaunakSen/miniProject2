@@ -367,8 +367,16 @@ if (isset($_POST['e'])) {
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-sub pull-right">
-                    <li><a href="signup.php">Register</a></li>
-                    <li><a href="login.php">Login</a></li>
+                    <?
+                    if(isset($_SESSION['email'])) {
+                        echo '<li><a href="logout.php">Logout</a></li>';
+                    }
+                    else {
+
+                        echo '<li><a href="signup.php">Register</a></li>
+                    <li><a href="login.php">Login</a></li>';
+                    }
+                    ?>
                 </ul>
             </div>
             <!--/.nav-collapse -->

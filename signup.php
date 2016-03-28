@@ -404,15 +404,23 @@ if (isset($_POST["emailcheck"])) {
             </div>
             <div id="navbar" class="collapse navbar-collapse">
                 <ul class="nav navbar-nav">
-                    <li class=""><a href="index.php">Home</a></li>
+                    <li class="active"><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="services.html">Services</a></li>
                     <li><a href="blog.html">Blog</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-sub pull-right">
-                    <li><a href="signup.php">Register</a></li>
-                    <li><a href="login.php">Login</a></li>
+                    <?
+                    if(isset($_SESSION['email'])) {
+                        echo '<li><a href="logout.php">Logout</a></li>';
+                    }
+                    else {
+
+                        echo '<li><a href="signup.php">Register</a></li>
+                    <li><a href="login.php">Login</a></li>';
+                    }
+                    ?>
                 </ul>
             </div>
             <!--/.nav-collapse -->
