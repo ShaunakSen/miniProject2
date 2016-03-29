@@ -100,6 +100,7 @@ if (isset($_POST['e'])) {
     <script src="js/ajax.js"></script>
     <script src="js/jquery.min.js"></script
     <script src="js/bootstrap.js"></script>
+    <link rel="stylesheet" href="css/font-awesome.min.css"/>
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/signup.css">
     <script>
@@ -360,7 +361,7 @@ if (isset($_POST['e'])) {
             </div>
             <div id="navbar" class="collapse navbar-collapse">
                 <ul class="nav navbar-nav">
-                    <li class="active"><a href="index.html">Home</a></li>
+                    <li class="active"><a href="index.php">Home</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="services.html">Services</a></li>
                     <li><a href="blog.html">Blog</a></li>

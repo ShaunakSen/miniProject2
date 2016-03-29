@@ -78,6 +78,53 @@ if (isset($_POST["e"])) {
 }
 
 
+if (isset($_POST["e1"])) {
+    $e = escape_string($_POST['e1']);
+    $p = md5($_POST['p1']);
+    if ($e == "" || $p == "") {
+        echo "login_failed";
+        exit();
+    } else {
+        $query = query("SELECT * FROM users_registered WHERE email='$e' AND activated !='0' AND type='admin' LIMIT 1");
+        confirm($query);
+        $user_check = mysqli_num_rows($query);
+        $row = fetch_array($query);
+        $user_id = $row['id'];
+        $user_first_name = $row['first_name'];
+        $user_last_name = $row['last_name'];
+        $user_email = $row['email'];
+        $user_type = $row['type'];
+        $user_password = $row['password'];
+        $user_roll = $row['roll_no'];
+        $user_phone = $row['phone_number'];
+        $user_dob = $row['dob'];
+        $user_gender = $row['gender'];
+        $user_hobby = $row['hobby'];
+        if ($p != $user_password) {
+            echo "login_failed";
+            exit();
+        } else {
+            $_SESSION['user_id'] = $user_id;
+            $_SESSION["first_name"] = $user_first_name;
+            $_SESSION["first_name"] = $user_last_name;
+            $_SESSION['email'] = $user_email;
+            $_SESSION['type'] = $user_type;
+            $_SESSION['roll_no'] = $user_roll;
+            $_SESSION['phone_number'] = $user_phone;
+            $_SESSION['dob'] = $user_dob;
+            $_SESSION['gender'] = $user_gender;
+            $_SESSION['hobby'] = $user_hobby;
+            echo $_SESSION['email'];
+            exit();
+
+        }
+
+
+    }
+
+}
+
+
 
 
 ?>
@@ -164,6 +211,39 @@ if (isset($_POST["e"])) {
             }
         }
 
+        function admin_login() {
+            var e1 = _("email").value;
+            var p1 = _("password").value;
+            if (e1 == "" || p1 == "") {
+                _("status").innerHTML = "Plz fill out the form data";
+            }
+            else {
+                _("submit").style.display = "none";
+                _("status").innerHTML = "plz wait...";
+                var ajax = ajaxObj("POST", "login.php");
+                ajax.onreadystatechange = function () {
+                    if (ajaxReturn(ajax) == true) {
+                        console.log(ajax.responseText);
+
+
+                        if (ajax.responseText.trim() == "login_failed") {
+                            _("status").innerHTML = "Login Unsuccessful.. Please try again";
+                            _("submit").style.display = "block";
+
+                        }
+                        else {
+
+                            window.location = "mydetails.php?user=" + ajax.responseText;
+                            console.log(ajax.responseText);
+                        }
+
+
+                    }
+                }
+                ajax.send("e1=" + e1 + "&p1=" + p1);
+            }
+        }
+
 
     </script>
 </head>
@@ -210,33 +290,85 @@ if (isset($_POST["e"])) {
         <br><br>
 
         <div class="row">
-            <div class="col-sm-4"></div>
-            <div class="col-sm-4">
-                <div class="caption">Enter Your Email Id Here</div>
-                <input type="email" class="input" id="email" name="email" onkeyup="restrict('email')"
-                       placeholder="Email Id">
-                <br>
-
-                <div id="emailstatus"></div>
-            </div>
-            <div class="col-sm-4"></div>
+            <div class="col-md-2"></div>
+            <div class="col-md-4 student selected">Student Login</div>
+            <div class="col-md-4 admin">Admin Login</div>
+            <div class="col-md-2"></div>
         </div>
         <br>
 
-        <div class="row">
-            <div class="col-sm-4"></div>
-            <div class="col-sm-4">
-                <div class="caption">Enter Password</div>
-                <input type="password" class="input" id="password" name="password" placeholder="Enter Password">
-                <br><br><br>
-                <button class="submit" id="submit" onclick="login()">Submit</button>
-                <br><br>
-                <div id="status"></div>
-                <br><br><br><br><br><br><br><br><br><br>
+        <div id="loaded-content">
+            <div class="row">
+                <div class="col-sm-5"></div>
+                <div class="col-sm-3">
+                    <div class="caption">Enter Your Email Id Here</div>
+                    <input type="email" class="input" id="email" name="email" onkeyup="restrict('email')"
+                           placeholder="Email Id">
+                    <br>
+
+                    <div id="emailstatus"></div>
+                </div>
+                <div class="col-sm-4"></div>
             </div>
-            <div class="col-sm-4"></div>
+            <br>
+
+            <div class="row">
+                <div class="col-sm-5"></div>
+                <div class="col-sm-3">
+                    <div class="caption">Enter Password</div>
+                    <input type="password" class="input" id="password" name="password" placeholder="Enter Password">
+                    <br><br><br>
+                    <button class="submit" id="submit" onclick="login()">Submit</button>
+                    <br><br>
+
+                    <div id="status"></div>
+                    <br><br><br><br><br><br><br><br><br><br>
+                </div>
+                <div class="col-sm-4"></div>
+            </div>
         </div>
     </form>
 </div>
+<script>
+    $('.student').on('click', function (e) {
+        e.preventDefault();
+        var $load = $('#loaded-content');
+        $load.hide();
+        $load.load('fragments/student.html', function () {
+            $('.student').addClass('selected');
+            $('.admin').removeClass('selected');
+        }).fadeIn('slow');
+    });
+
+    $('.admin').on('click', function (e) {
+        e.preventDefault();
+        var $load = $('#loaded-content');
+        $load.hide();
+        $load.load('fragments/admin.html', function () {
+            $('.admin').addClass('selected');
+            $('.student').removeClass('selected');
+        }).fadeIn('slow');
+    });
+
+    $('.student').on('click', function (e) {
+        e.preventDefault();
+        var $load = $('#loaded-content');
+        //$load.hide();
+        $load.load('fragments/student.html', function () {
+            $('.student').addClass('selected');
+            $('.admin').removeClass('selected');
+        }).fadeIn('slow');
+    });
+
+    $('.admin').on('click', function (e) {
+        e.preventDefault();
+        var $load = $('#loaded-content');
+        //$load.hide();
+        $load.load('fragments/admin.html', function () {
+            $('.admin').addClass('selected');
+            $('.student').removeClass('selected');
+        }).fadeIn('slow');
+    });
+</script>
 </body>
 </html>

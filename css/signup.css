@@ -210,3 +210,33 @@ a:active {
     margin-left: 50px;
     color: #484848;
 }
+
+.admin
+{
+    height:70px;
+    background-color: #EF6491;
+    line-height: 70px;
+    font-family: headerFont2,sans-serif;
+    font-size: 17px;
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+
+}
+.student
+{
+    height:70px;
+    background-color: #FF5A5F;
+    line-height: 70px;
+    font-family: headerFont2,sans-serif;
+    font-size: 17px;
+    text-align: center;
+    border-right: 1px solid #c0c0c0;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.selected
+{
+    border-bottom: 2px solid greenyellow;
+}
