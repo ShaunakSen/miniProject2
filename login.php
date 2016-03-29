@@ -38,7 +38,7 @@ if (isset($_POST["e"])) {
         echo "login_failed";
         exit();
     } else {
-        $query = query("SELECT * FROM users_registered WHERE email='$e' AND activated !='0' LIMIT 1");
+        $query = query("SELECT * FROM users_registered WHERE email='$e' AND type='normal' AND activated !='0' LIMIT 1");
         confirm($query);
         $user_check = mysqli_num_rows($query);
         $row = fetch_array($query);
@@ -285,7 +285,7 @@ if (isset($_POST["e1"])) {
 
         <div class="header">
             <br>
-            Log In
+            Log In As...
         </div>
         <br><br>
 
@@ -368,6 +368,11 @@ if (isset($_POST["e1"])) {
             $('.admin').addClass('selected');
             $('.student').removeClass('selected');
         }).fadeIn('slow');
+    });
+
+    $.ajaxSetup ({
+        // Disable caching of AJAX responses */
+        cache: false
     });
 </script>
 </body>

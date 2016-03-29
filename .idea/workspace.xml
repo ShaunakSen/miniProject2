@@ -2,15 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a6ac6a37-24b7-4548-af30-97d4fa1bf1f4" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fragments/admin.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fragments/student.html" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/574563_296015173813188_590469099_n.jpg" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/Acer_Aspire_P3-c.jpg" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/Web-Design-Wallpapers-1.png" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/edit_details.php" afterPath="$PROJECT_DIR$/edit_details.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fragments/admin.html" afterPath="$PROJECT_DIR$/fragments/admin.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/login.php" afterPath="$PROJECT_DIR$/login.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/signup.css" afterPath="$PROJECT_DIR$/css/signup.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/signup.php" afterPath="$PROJECT_DIR$/signup.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fragments/student.html" afterPath="$PROJECT_DIR$/fragments/student.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="it-mini-project.iws" />
@@ -55,18 +53,18 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="login.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="login.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/login.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7346939" vertical-offset="3834" max-vertical-offset="6804">
-              <caret line="235" column="28" selection-start-line="235" selection-start-column="28" selection-end-line="235" selection-end-column="28" />
+            <state vertical-scroll-proportion="-17.333334" vertical-offset="4698" max-vertical-offset="6912">
+              <caret line="287" column="24" selection-start-line="287" selection-start-column="24" selection-end-line="287" selection-end-column="24" />
               <folding>
-                <marker date="1459224484962" expanded="true" signature="344:403" placeholder="SELECT * FRO..users_registered..." />
-                <marker date="1459224484962" expanded="true" signature="529:543" placeholder="..." />
-                <marker date="1459224484962" expanded="true" signature="612:626" placeholder="..." />
-                <marker date="1459224484962" expanded="true" signature="702:716" placeholder="..." />
-                <marker date="1459224484962" expanded="true" signature="978:1053" placeholder="SELECT * FRO..users_registered..." />
-                <marker date="1459224484962" expanded="true" signature="2470:2562" placeholder="SELECT * FRO..users_registered..." />
+                <marker date="1459225348090" expanded="true" signature="344:403" placeholder="SELECT * FRO..users_registered..." />
+                <marker date="1459225348090" expanded="true" signature="529:543" placeholder="..." />
+                <marker date="1459225348090" expanded="true" signature="612:626" placeholder="..." />
+                <marker date="1459225348090" expanded="true" signature="702:716" placeholder="..." />
+                <marker date="1459225348090" expanded="true" signature="978:1071" placeholder="SELECT * FRO..users_registered..." />
+                <marker date="1459225348090" expanded="true" signature="2488:2580" placeholder="SELECT * FRO..users_registered..." />
               </folding>
             </state>
           </provider>
@@ -75,8 +73,8 @@
       <file leaf-file-name="admin.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/fragments/admin.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-13.333333" vertical-offset="0" max-vertical-offset="594">
-              <caret line="20" column="58" selection-start-line="20" selection-start-column="58" selection-end-line="20" selection-end-column="58" />
+            <state vertical-scroll-proportion="-1.3333334" vertical-offset="0" max-vertical-offset="594">
+              <caret line="2" column="24" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
               <folding />
             </state>
           </provider>
@@ -85,18 +83,18 @@
       <file leaf-file-name="student.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/fragments/student.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-18.0" vertical-offset="0" max-vertical-offset="594">
-              <caret line="27" column="6" selection-start-line="27" selection-start-column="6" selection-end-line="27" selection-end-column="6" />
+            <state vertical-scroll-proportion="-8.0" vertical-offset="0" max-vertical-offset="594">
+              <caret line="12" column="4" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="4" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="signup.css" pinned="false" current-in-tab="false">
+      <file leaf-file-name="signup.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/css/signup.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="3880" max-vertical-offset="4446">
-              <caret line="225" column="8" selection-start-line="225" selection-start-column="8" selection-end-line="225" selection-end-column="8" />
+            <state vertical-scroll-proportion="0.2720848" vertical-offset="476" max-vertical-offset="4446">
+              <caret line="35" column="7" selection-start-line="35" selection-start-column="7" selection-end-line="35" selection-end-column="7" />
               <folding />
             </state>
           </provider>
@@ -211,11 +209,11 @@
         <option value="$PROJECT_DIR$/mydetails.php" />
         <option value="$PROJECT_DIR$/edit_details.php" />
         <option value="$PROJECT_DIR$/index.php" />
-        <option value="$PROJECT_DIR$/fragments/student.html" />
         <option value="$PROJECT_DIR$/signup.php" />
-        <option value="$PROJECT_DIR$/css/signup.css" />
         <option value="$PROJECT_DIR$/fragments/admin.html" />
+        <option value="$PROJECT_DIR$/fragments/student.html" />
         <option value="$PROJECT_DIR$/login.php" />
+        <option value="$PROJECT_DIR$/css/signup.css" />
       </list>
     </option>
   </component>
@@ -900,14 +898,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/fragments/student.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-18.0" vertical-offset="0" max-vertical-offset="594">
-          <caret line="27" column="6" selection-start-line="27" selection-start-column="6" selection-end-line="27" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/signup.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-18.62963" vertical-offset="10369" max-vertical-offset="11034">
@@ -930,34 +920,42 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/signup.css">
+    <entry file="file://$PROJECT_DIR$/fragments/admin.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="3880" max-vertical-offset="4446">
-          <caret line="225" column="8" selection-start-line="225" selection-start-column="8" selection-end-line="225" selection-end-column="8" />
+        <state vertical-scroll-proportion="-1.3333334" vertical-offset="0" max-vertical-offset="594">
+          <caret line="2" column="24" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/fragments/admin.html">
+    <entry file="file://$PROJECT_DIR$/fragments/student.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-13.333333" vertical-offset="0" max-vertical-offset="594">
-          <caret line="20" column="58" selection-start-line="20" selection-start-column="58" selection-end-line="20" selection-end-column="58" />
+        <state vertical-scroll-proportion="-8.0" vertical-offset="0" max-vertical-offset="594">
+          <caret line="12" column="4" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="4" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/login.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7346939" vertical-offset="3834" max-vertical-offset="6804">
-          <caret line="235" column="28" selection-start-line="235" selection-start-column="28" selection-end-line="235" selection-end-column="28" />
+        <state vertical-scroll-proportion="-17.333334" vertical-offset="4698" max-vertical-offset="6912">
+          <caret line="287" column="24" selection-start-line="287" selection-start-column="24" selection-end-line="287" selection-end-column="24" />
           <folding>
-            <marker date="1459224484962" expanded="true" signature="344:403" placeholder="SELECT * FRO..users_registered..." />
-            <marker date="1459224484962" expanded="true" signature="529:543" placeholder="..." />
-            <marker date="1459224484962" expanded="true" signature="612:626" placeholder="..." />
-            <marker date="1459224484962" expanded="true" signature="702:716" placeholder="..." />
-            <marker date="1459224484962" expanded="true" signature="978:1053" placeholder="SELECT * FRO..users_registered..." />
-            <marker date="1459224484962" expanded="true" signature="2470:2562" placeholder="SELECT * FRO..users_registered..." />
+            <marker date="1459225348090" expanded="true" signature="344:403" placeholder="SELECT * FRO..users_registered..." />
+            <marker date="1459225348090" expanded="true" signature="529:543" placeholder="..." />
+            <marker date="1459225348090" expanded="true" signature="612:626" placeholder="..." />
+            <marker date="1459225348090" expanded="true" signature="702:716" placeholder="..." />
+            <marker date="1459225348090" expanded="true" signature="978:1071" placeholder="SELECT * FRO..users_registered..." />
+            <marker date="1459225348090" expanded="true" signature="2488:2580" placeholder="SELECT * FRO..users_registered..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/signup.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.2720848" vertical-offset="476" max-vertical-offset="4446">
+          <caret line="35" column="7" selection-start-line="35" selection-start-column="7" selection-end-line="35" selection-end-column="7" />
+          <folding />
         </state>
       </provider>
     </entry>
