@@ -22,7 +22,10 @@ function redirect_to($url)
     <script src="js/slider.js"></script>
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/index.css">
-
+    <!--
+    <script src="http://maps.googleapis.com/maps/api/js"></script>
+    -->
+    <script src="js/map.js"></script>
     <style type="text/css">
         #apDiv1 {
             position: absolute;
@@ -34,6 +37,17 @@ function redirect_to($url)
             opacity: 0.5;
         }
     </style>
+    <script>
+        function initialize() {
+            var mapProp = {
+                center: new google.maps.LatLng(23.549879, 87.291023),
+                zoom: 15,
+                mapTypeId: google.maps.MapTypeId.ROADMAP
+            };
+            var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
+        }
+        google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
 </head>
 <body>
 
@@ -52,14 +66,14 @@ function redirect_to($url)
             </div>
             <div id="navbar" class="collapse navbar-collapse">
                 <ul class="nav navbar-nav">
-                    <li class="active"><a href="index.html">Home</a></li>
+                    <li class="active"><a href="index.php">Home</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="services.html">Services</a></li>
                     <li><a href="blog.html">Blog</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-sub pull-right">
-                    <?
+                    <?php
                     if(isset($_SESSION['email'])) {
                         echo '<li><a href="logout.php">Logout</a></li>';
                     }
@@ -134,30 +148,68 @@ function redirect_to($url)
     </div>
     <br><br>
 
+    <div class="row">
+        <div class="col-sm-1"></div>
+        <div class="col-sm-10">
+            <h1 style="color: #E6E1E1">Locate Us...</h1>
+            <hr>
+            <div id="googleMap" style="width: 800px!important; height: 300px;"></div>
+        </div>
+        <div class="col-sm-1"></div>
+    </div>
+
     <div class="content">
-        <h1>A portal for attendance and grades </h1>
+        <div class="row">
+        <h1>What We Do</h1>
+        <hr>
+        <div class="row">
+            <div class="col-sm-1"></div>
+            <div class="col-sm-10 information2">
+                This is a <strong>Content management System</strong>
+                There has to be two types of accounts, one for the administrator and the
 
-        <div class="markdown">
-            <p>
-                "Lorem ipsum dolor sit amet,
-                consectetur adipiscing elit, sed do eiusmod tempor incididunt<br>
-                ut labore et dolore magna aliqua.<br>
-                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut<br>
-                aliquip ex ea commodo consequat.<br>
-                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore<br>
-                eu fugiat nulla pariatur.<br>
-                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia<br>
-                deserunt<br>
-                mollit anim id est laborum."<br>
-            </p>
-        </div>
-        <h1> Brought to you by </h1>
+                other for the users. Two separate login systems have been created.
 
-        <div class="markdown">
-            Shaunak Sen <span style="color: #15354d; font-weight: bold">13/IT/82</span><br>
-            Abhay Raizada <span style="color: #15354d; font-weight: bold">13/IT/68</span><br>
-            Surya Prakash <span style="color: #15354d; font-weight: bold">13/IT/74</span><br>
+                Admin has the right to access the student database, add new student
+
+                data, delete any student’s data or update the same. Users need to
+
+                register first by filling up a standard registration form, with the fields like
+
+                name age roll number, branch, contact details, address, etc. The
+
+                registration request should go the admin. Upon acceptance of the
+
+                registration request by the admin, the user’s account gets activated.
+            </div>
+            <div class="col-sm-1"></div>
         </div>
+        <h1> Brought to you by...</h1>
+        <hr>
+        <div class="row">
+            <div class="col-sm-1"></div>
+            <div class="col-sm-10 information">
+                <div class="row">
+                    <div class="col-xs-3">
+                        Abhay Raizada<br>
+                        Shaunak Sen<br>
+                        Surya Prakash
+                    </div>
+                    <div class="col-xs-3">
+                        13/IT/68<br>
+                        13/IT/82<br>
+                        13/IT/74
+                    </div>
+                    <div class="col-xs-6">
+                        shaunak1105@gmail.com<br>
+                        shaunak1105@gmail.com<br>
+                        shaunak1105@gmail.com
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+
 
     </div>
 </div>

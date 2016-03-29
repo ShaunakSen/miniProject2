@@ -124,8 +124,7 @@ if (isset($_POST["emailcheck"])) {
 
     <script src="js/main.js"></script>
     <script src="js/ajax.js"></script>
-    <script src="js/jquery.min.js"></script
-        >
+    <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.js"></script>
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/signup.css">
@@ -382,6 +381,8 @@ if (isset($_POST["emailcheck"])) {
         }
 
 
+
+
     </script>
     <style type="text/css">
 
@@ -411,7 +412,7 @@ if (isset($_POST["emailcheck"])) {
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-sub pull-right">
-                    <?
+                    <?php
                     if(isset($_SESSION['email'])) {
                         echo '<li><a href="logout.php">Logout</a></li>';
                     }
@@ -617,6 +618,9 @@ if (isset($_POST["emailcheck"])) {
     $("#sortpicture").change(function () {
         readURL(this);
     });
+
+    var myId = ["firstname", "lastname", "email", "phone", "dept", "year", "roll", "date", "sortpicture", "password", "password2", "submit"];
+
 
 
 </script>

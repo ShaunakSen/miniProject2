@@ -368,7 +368,7 @@ if (isset($_POST['e'])) {
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-sub pull-right">
-                    <?
+                    <?php
                     if(isset($_SESSION['email'])) {
                         echo '<li><a href="logout.php">Logout</a></li>';
                     }
@@ -399,13 +399,13 @@ if (isset($_POST['e'])) {
             <div class="col-sm-4">
                 <div class="caption">Enter First Name Here</div>
                 <input type="text" class="input" id="firstname" name="firstname" onkeyup="restrict('firstname')"
-                       placeholder="First Name" onblur="stupid('firstname')" value="<? echo $user_first_name; ?>">
+                       placeholder="First Name" onblur="stupid('firstname')" value="<?php echo $user_first_name; ?>">
                 <br><br>
             </div>
             <div class="col-sm-4">
                 <div class="caption">Enter Last Name Here</div>
                 <input type="text" class="input" id="lastname" name="lastname" onkeyup="restrict('lastname')"
-                       placeholder="Last Name" disabled onblur="stupid('lastname')" value="<? echo $user_last_name; ?>">
+                       placeholder="Last Name" disabled onblur="stupid('lastname')" value="<?php echo $user_last_name; ?>">
             </div>
             <div class="col-sm-2"></div>
         </div>
@@ -417,7 +417,7 @@ if (isset($_POST['e'])) {
                 <div class="caption">Enter Your Email Id Here</div>
                 <input type="email" class="input" id="email" name="email" onkeyup="restrict('email')"
                        onblur="checkEmail()"
-                       placeholder="Email Id" value="<? echo $user_email; ?>">
+                       placeholder="Email Id" value="<?php echo $user_email; ?>">
                 <br>
 
                 <div id="emailstatus"></div>
@@ -426,7 +426,7 @@ if (isset($_POST['e'])) {
             <div class="col-sm-4">
                 <div class="caption">Enter Your Phone Number Here</div>
                 <input type="tel" class="input" id="phone" name="email" onkeyup="restrict('phone')"
-                       onblur="validate_number_length()" placeholder="Phone Number" value="<? echo $user_phone; ?>">
+                       onblur="validate_number_length()" placeholder="Phone Number" value="<?php echo $user_phone; ?>">
                 <br>
                 <br>
 
@@ -441,21 +441,21 @@ if (isset($_POST['e'])) {
                 <div class="caption">Select Your Department Code</div>
                 <select name="select" id="dept" class="department" onblur="run()">
                     <option value="">Select your Department</option>
-                    <option value="BT" <? if ($user_dept == "BT") echo " selected" ?>>BT</option>
-                    <option value="CE" <? if ($user_dept == "CE") echo " selected" ?>>CE</option>
-                    <option value="CH" <? if ($user_dept == "CH") echo " selected" ?>>CH</option>
-                    <option value="EC" <? if ($user_dept == "EC") echo " selected" ?>>EC</option>
-                    <option value="EE" <? if ($user_dept == "EE") echo " selected" ?>>EE</option>
-                    <option value="IT" <? if ($user_dept == "IT") echo " selected" ?>>IT</option>
-                    <option value="ME" <? if ($user_dept == "ME") echo " selected" ?>>ME</option>
-                    <option value="MME" <? if ($user_dept == "MME") echo " selected" ?>>MME</option>
+                    <option value="BT" <?php if ($user_dept == "BT") echo " selected" ?>>BT</option>
+                    <option value="CE" <?php if ($user_dept == "CE") echo " selected" ?>>CE</option>
+                    <option value="CH" <?php if ($user_dept == "CH") echo " selected" ?>>CH</option>
+                    <option value="EC" <?php if ($user_dept == "EC") echo " selected" ?>>EC</option>
+                    <option value="EE" <?php if ($user_dept == "EE") echo " selected" ?>>EE</option>
+                    <option value="IT" <?php if ($user_dept == "IT") echo " selected" ?>>IT</option>
+                    <option value="ME" <?php if ($user_dept == "ME") echo " selected" ?>>ME</option>
+                    <option value="MME" <?php if ($user_dept == "MME") echo " selected" ?>>MME</option>
                 </select>
                 <br><br>
             </div>
             <div class="col-sm-4">
                 <div class="caption">Enter Your Year of Admission</div>
                 <input type="number" id="year" class="admission-year" name="year" min="2011" max="2015" onblur="run()"
-                       value="<? echo $user_year_of_admission ?>">
+                       value="<?php echo $user_year_of_admission ?>">
                 <br><br>
             </div>
             <div class="col-sm-2"></div>
@@ -465,12 +465,12 @@ if (isset($_POST['e'])) {
             <div class="col-sm-4">
                 <div class="caption">Enter Your Roll Number</div>
                 <input type="text" class="input" id="roll" name="rollno" onblur="stupid('roll')"
-                       value="<? echo $user_roll ?>">
+                       value="<?php echo $user_roll ?>">
             </div>
             <div class="col-sm-4">
                 <div class="caption">Enter Your Birth Date</div>
                 <input type="date" class="date" id="date" name="date" onblur="calculateDOB()"
-                       value="<? echo $user_dob ?>">
+                       value="<?php echo $user_dob ?>">
                 <br><br>
 
                 <div id="age_calculated">Your calculated age shows here</div>
@@ -488,10 +488,10 @@ if (isset($_POST['e'])) {
 
                 <div class="caption">Select Your Gender</div>
                 <input type="radio" name="gender" class="gender" value="male"
-                       id="male" <? if ($user_gender == "male") echo "checked" ?>> <span
+                       id="male" <?php if ($user_gender == "male") echo "checked" ?>> <span
                     style="color: #D0D0D0;font-size: 19px;position: relative;bottom: 5px;font-family: Ubuntu, sans-serif;font-weight: 200;">Male</span><br>
                 <input type="radio" name="gender" class="gender" value="female"
-                       id="female" <? if ($user_gender == "female") echo "checked" ?>><span
+                       id="female" <?php if ($user_gender == "female") echo "checked" ?>><span
                     style="color: #D0D0D0;font-size: 19px;position: relative;bottom: 5px;font-family: Ubuntu, sans-serif;font-weight: 200;">Female</span><br>
 
 

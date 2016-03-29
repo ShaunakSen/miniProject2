@@ -222,7 +222,7 @@ if (isset($_GET["user"]) && isset($_SESSION['email']) && (($_GET["user"]) == $_S
             </div>
             <div id="navbar" class="collapse navbar-collapse">
                 <ul class="nav navbar-nav">
-                    <li class="active"><a href="index.html">Home</a></li>
+                    <li class="active"><a href="index.php">Home</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="services.html">Services</a></li>
                     <li><a href="blog.html">Blog</a></li>
@@ -248,37 +248,37 @@ if (isset($_GET["user"]) && isset($_SESSION['email']) && (($_GET["user"]) == $_S
 <div class="row header">
     <div class="col-sm-2"></div>
     <div class="col-sm-4"><img id="profile-pic" width="300" height="300" src="<?php echo $user_image; ?>"></div>
-    <div class="col-sm-4 welcome-message">Welcome <? echo $user_first_name . " " . $user_last_name; ?></div>
+    <div class="col-sm-4 welcome-message">Welcome <?php echo $user_first_name . " " . $user_last_name; ?></div>
     <div class="col-sm-2"></div>
 </div>
 <div class="data-container">
     <div class="email"><span
-            style="margin-left: 40px; color: #3f3f46; font-size: 18px;">Email id:  </span><? echo $user_email; ?></div>
+                style="margin-left: 40px; color: #3f3f46; font-size: 18px;">Email id:  </span><?php echo $user_email; ?></div>
     <div class="phone"><span
-            style="margin-left: 40px; color: #3f3f46; font-size: 18px;">Phone no:  </span><? echo $user_phone; ?></div>
+            style="margin-left: 40px; color: #3f3f46; font-size: 18px;">Phone no:  </span><?php echo $user_phone; ?></div>
 </div>
 <div class="data-container">
     <div class="dob"><span
-            style="margin-left: 40px; color: #3f3f46; font-size: 18px;">Date of Birth:  </span><? echo $user_dob; ?>
+            style="margin-left: 40px; color: #3f3f46; font-size: 18px;">Date of Birth:  </span><?php echo $user_dob; ?>
     </div>
     <div class="dept"><span
-            style="margin-left: 40px; color: #3f3f46; font-size: 18px;">Department:  </span><? echo $user_dept; ?></div>
+            style="margin-left: 40px; color: #3f3f46; font-size: 18px;">Department:  </span><?php echo $user_dept; ?></div>
 </div>
 <div class="data-container">
     <div class="gender"><span
-            style="margin-left: 40px; color: #3f3f46; font-size: 18px;">Gender:  </span><? echo $user_gender; ?></div>
+            style="margin-left: 40px; color: #3f3f46; font-size: 18px;">Gender:  </span><?php echo $user_gender; ?></div>
     <div class="hobby"><span
-            style="margin-left: 40px; color: #3f3f46; font-size: 18px;">Hobbies:  </span><? echo $user_hobby; ?></div>
+            style="margin-left: 40px; color: #3f3f46; font-size: 18px;">Hobbies:  </span><?php echo $user_hobby; ?></div>
 </div>
 <br><br>
 
 <div class="row">
     <div class="col-sm-2"></div>
     <div class="col-sm-4">
-        <div class="admin">
-            <?
+
+            <?php
             if ($_SESSION['type'] == "admin") {
-                echo '<a href="admin.php" class="admin-panel-button">Admin Panel</a><br></div></div>';
+                echo '<div class="admin"><a href="admin.php" class="admin-panel-button">Admin Panel</a><br></div></div>';
                 echo '<div class="col-sm-4"><div class="edit-details-button"><a href="edit_details.php?user=' . $_GET['user'] . '">Edit Details</a></div></div>';
             } else if ((isset($_SESSION['active'])) && ($_SESSION['active'] === true)) {
                 //user has been activated by admin .. give him privileges
@@ -286,8 +286,9 @@ if (isset($_GET["user"]) && isset($_SESSION['email']) && (($_GET["user"]) == $_S
             }
             ?>
         </div>
+            <br><br>
         <div class="col-sm-2"></div>
-        <br><br>
+
     </div>
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>

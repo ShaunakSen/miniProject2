@@ -156,3 +156,21 @@ a:active {
 #next{
     margin-left:-45px;
 }
+.information{
+    background-color: #b2f2f4;
+    color: #504e52;
+    font-family: "Droid Sans",sans-serif;
+    font-size: 15px;
+    line-height: 60px;
+}
+
+.information2
+{
+    background-color: #b2f2f4;
+    color: #504e52;
+    font-family: "Droid Sans",sans-serif;
+    font-size: 15px;
+    line-height: 40px;
+    width: 800px !important;
+    margin-left: 72px;
+}
