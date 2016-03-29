@@ -28,6 +28,7 @@ if(isset($_GET["user"]) && isset($_SESSION['email']) &&(($_GET["user"])==$_SESSI
     $user_gender = $row['gender'];
     $user_hobby = $row['hobby'];
     $user_active = $row['activated'];
+    $user_image = $row['image'];
     if($user_active === '2' || $_SESSION['type'] == 'admin')
     {
         $_SESSION['active']=true;
@@ -45,28 +46,57 @@ else
     <meta charset="UTF-8">
     <title></title>
     <link rel="stylesheet" href="css/bootstrap.min.css"/>
-    <link rel="stylesheet" href="css/mydetails.css"/>
     <style>
 
         html, body {
             margin: 0;
             padding: 0;
         }
+        .navbar {
+            width: 90%;
+            margin: auto;
+            border-right: 0 solid #e7e7e7;
+            border-left: 0 solid #e7e7e7;
+            border-color: #e7e7e7;
+            border-bottom: 0;
+            min-height: 60px;
+            background: #dfe3e8;
+            margin-bottom: 50px; }
+        .navbar a {
+            color: #0083b3 !important;
+            font-size: 20px;
+            letter-spacing: -0.5px;
+            padding-bottom: 24px !important;
+            padding-top: 20px !important;
+            transition: all 0.3s linear;
+        }
+
+        .navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus {
+            background: #0081ae;
+            color: #fff !important; }
+
+        .navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
+            color: #fff !important;
+            background-color: #0081ae; }
 
         .header {
-            background-color: #D683C8;
-            width: 100%;
-            height: 114px;
-            text-align: center;
-            font-family: "Droid Sans", sans-serif;
-            line-height: 169px;
-            color:#7B0909;
-            font-size: 19px;
+            background-color: #0D807A;
 
+            text-align: center;
+            padding-top: 69px;
+        }
+
+        .welcome-message
+        {
+            font-family: "Droid Sans", sans-serif;
+            color: #e5dee9;
+            line-height: 369px;
+            font-size: 31px;
         }
 
         .data-container {
             display: flex;
+
         }
 
         .email {
@@ -137,6 +167,13 @@ else
             font-size: 16px;
             line-height: 100px;
         }
+        #profile-pic
+        {
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+
+        }
     </style>
 
 </head>
@@ -180,9 +217,11 @@ else
     </nav>
 </header>
 
-<div class="header">
-
-    Welcome <? echo $user_first_name." ".$user_last_name;?>
+<div class="row header">
+    <div class="col-sm-2"></div>
+    <div class="col-sm-4"><img id="profile-pic" width="300" height="300" src="<?php echo $user_image;?>"></div>
+    <div class="col-sm-4 welcome-message">Welcome <? echo $user_first_name." ".$user_last_name;?></div>
+    <div class="col-sm-2"></div>
 </div>
 <div class="data-container">
     <div class="email"><span style="margin-left: 40px; color: #3f3f46; font-size: 18px;">Email id:  </span><? echo $user_email;?></div>
