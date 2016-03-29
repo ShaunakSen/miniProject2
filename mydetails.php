@@ -7,8 +7,8 @@ function redirect_to($url)
 {
     header('Location: ' . $url);
 }
-if(isset($_GET["user"]) && isset($_SESSION['email']) &&(($_GET["user"])==$_SESSION['email']))
-{
+
+if (isset($_GET["user"]) && isset($_SESSION['email']) && (($_GET["user"]) == $_SESSION['email'])) {
     $email = $_GET['user'];
     $sql = "SELECT * FROM users_registered WHERE email='$email' LIMIT 1";
     $query = query($sql);
@@ -24,18 +24,15 @@ if(isset($_GET["user"]) && isset($_SESSION['email']) &&(($_GET["user"])==$_SESSI
     $user_roll = $row['roll_no'];
     $user_phone = $row['phone_number'];
     $user_dob = $row['dob'];
-    $user_dept=$row['dept'];
+    $user_dept = $row['dept'];
     $user_gender = $row['gender'];
     $user_hobby = $row['hobby'];
     $user_active = $row['activated'];
     $user_image = $row['image'];
-    if($user_active === '2' || $_SESSION['type'] == 'admin')
-    {
-        $_SESSION['active']=true;
+    if ($user_active === '2' || $_SESSION['type'] == 'admin') {
+        $_SESSION['active'] = true;
     }
-}
-else
-{
+} else {
     redirect_to("index.php");
 }
 ?>
@@ -52,6 +49,7 @@ else
             margin: 0;
             padding: 0;
         }
+
         .navbar {
             width: 90%;
             margin: auto;
@@ -61,7 +59,9 @@ else
             border-bottom: 0;
             min-height: 60px;
             background: #dfe3e8;
-            margin-bottom: 50px; }
+            margin-bottom: 50px;
+        }
+
         .navbar a {
             color: #0083b3 !important;
             font-size: 20px;
@@ -73,11 +73,13 @@ else
 
         .navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus {
             background: #0081ae;
-            color: #fff !important; }
+            color: #fff !important;
+        }
 
         .navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
             color: #fff !important;
-            background-color: #0081ae; }
+            background-color: #0081ae;
+        }
 
         .header {
             background-color: #0D807A;
@@ -86,8 +88,7 @@ else
             padding-top: 69px;
         }
 
-        .welcome-message
-        {
+        .welcome-message {
             font-family: "Droid Sans", sans-serif;
             color: #e5dee9;
             line-height: 369px;
@@ -148,31 +149,59 @@ else
             line-height: 100px;
             border-right: 1px solid #000000;
         }
-        .hobby
-        {
+
+        .hobby {
             flex: 1;
             height: 100px;
-            background-color:cornflowerblue ;
+            background-color: cornflowerblue;
             font-family: Ubuntu, sans-serif;
             font-size: 16px;
             line-height: 100px;
         }
 
-        .admin
-        {
-            flex: 1;
-            height: 100px;
-            background-color: #a0cd9c;
-            font-family: Ubuntu, sans-serif;
-            font-size: 16px;
-            line-height: 100px;
+        .admin {
+            width: 170px;
+            height: 45px;
+            line-height: 45px;
+            font-family: "Ubuntu", Helvetica, Arial, sans-serif;
+            font-weight: bold;
+            color: #4d4d4f;
+            background-color: #90D4E8;
+            text-align: center;
+            margin-left: 68px;
+            transition: all 0.3s ease-in-out;
+            cursor: pointer;
+            border: 0 !important;
         }
-        #profile-pic
-        {
+
+        .admin:hover {
+            background-color: #99a3ca;
+        }
+
+        .edit-details-button {
+            width: 170px;
+            height: 45px;
+            line-height: 45px;
+            font-family: "Ubuntu", Helvetica, Arial, sans-serif;
+            font-weight: bold;
+            color: #4d4d4f;
+            background-color: #7ee85e;
+            text-align: center;
+            margin-left: 68px;
+            transition: all 0.3s ease-in-out;
+            cursor: pointer;
+            border: 0 !important;
+        }
+
+        .edit-details-button:hover {
+            background-color: #68c852;
+        }
+
+        #profile-pic {
             width: 300px;
             height: 300px;
             border-radius: 50%;
-
+            border:10px solid #d1d1d1;
         }
     </style>
 
@@ -200,11 +229,10 @@ else
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-sub pull-right">
-                    <?
-                    if(isset($_SESSION['email'])) {
+                    <?php
+                    if (isset($_SESSION['email'])) {
                         echo '<li><a href="logout.php">Logout</a></li>';
-                    }
-                    else {
+                    } else {
 
                         echo '<li><a href="signup.php">Register</a></li>
                     <li><a href="login.php">Login</a></li>';
@@ -219,39 +247,49 @@ else
 
 <div class="row header">
     <div class="col-sm-2"></div>
-    <div class="col-sm-4"><img id="profile-pic" width="300" height="300" src="<?php echo $user_image;?>"></div>
-    <div class="col-sm-4 welcome-message">Welcome <? echo $user_first_name." ".$user_last_name;?></div>
+    <div class="col-sm-4"><img id="profile-pic" width="300" height="300" src="<?php echo $user_image; ?>"></div>
+    <div class="col-sm-4 welcome-message">Welcome <? echo $user_first_name . " " . $user_last_name; ?></div>
     <div class="col-sm-2"></div>
 </div>
 <div class="data-container">
-    <div class="email"><span style="margin-left: 40px; color: #3f3f46; font-size: 18px;">Email id:  </span><? echo $user_email;?></div>
-    <div class="phone"><span style="margin-left: 40px; color: #3f3f46; font-size: 18px;">Phone no:  </span><? echo $user_phone;?></div>
+    <div class="email"><span
+            style="margin-left: 40px; color: #3f3f46; font-size: 18px;">Email id:  </span><? echo $user_email; ?></div>
+    <div class="phone"><span
+            style="margin-left: 40px; color: #3f3f46; font-size: 18px;">Phone no:  </span><? echo $user_phone; ?></div>
 </div>
 <div class="data-container">
-    <div class="dob"><span style="margin-left: 40px; color: #3f3f46; font-size: 18px;">Date of Birth:  </span><? echo $user_dob;?></div>
-    <div class="dept"><span style="margin-left: 40px; color: #3f3f46; font-size: 18px;">Department:  </span><? echo $user_dept;?></div>
+    <div class="dob"><span
+            style="margin-left: 40px; color: #3f3f46; font-size: 18px;">Date of Birth:  </span><? echo $user_dob; ?>
+    </div>
+    <div class="dept"><span
+            style="margin-left: 40px; color: #3f3f46; font-size: 18px;">Department:  </span><? echo $user_dept; ?></div>
 </div>
 <div class="data-container">
-    <div class="gender"><span style="margin-left: 40px; color: #3f3f46; font-size: 18px;">Gender:  </span><? echo $user_gender;?></div>
-    <div class="hobby"><span style="margin-left: 40px; color: #3f3f46; font-size: 18px;">Hobbies:  </span><? echo $user_hobby;?></div>
+    <div class="gender"><span
+            style="margin-left: 40px; color: #3f3f46; font-size: 18px;">Gender:  </span><? echo $user_gender; ?></div>
+    <div class="hobby"><span
+            style="margin-left: 40px; color: #3f3f46; font-size: 18px;">Hobbies:  </span><? echo $user_hobby; ?></div>
 </div>
 <br><br>
-<div class="data-container">
-    <div class="admin">
-        <?
-        if($_SESSION['type']=="admin")
-        {
-            echo '<a href="admin.php">Admin Panel</a><br>';
-            echo '<a href="edit_details.php?user=' . $_GET['user'] . '">Edit Details</a>';
-        }
-        else if((isset($_SESSION['active'])) && ($_SESSION['active'] === true)) {
-            //user has been activated by admin .. give him privileges
-            echo '<a href="edit_details.php?user=' . $_GET['user'] . '">Edit Details</a>';
-        }
-        ?>
+
+<div class="row">
+    <div class="col-sm-2"></div>
+    <div class="col-sm-4">
+        <div class="admin">
+            <?
+            if ($_SESSION['type'] == "admin") {
+                echo '<a href="admin.php" class="admin-panel-button">Admin Panel</a><br></div></div>';
+                echo '<div class="col-sm-4"><div class="edit-details-button"><a href="edit_details.php?user=' . $_GET['user'] . '">Edit Details</a></div></div>';
+            } else if ((isset($_SESSION['active'])) && ($_SESSION['active'] === true)) {
+                //user has been activated by admin .. give him privileges
+                echo '<div class="col-sm-4"><div class="edit-details-button"><a href="edit_details.php?user=' . $_GET['user'] . '">Edit Details</a></div></div>';
+            }
+            ?>
+        </div>
+        <div class="col-sm-2"></div>
+        <br><br>
     </div>
-</div>
-<script src="js/jquery.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
 </body>
 </html>
