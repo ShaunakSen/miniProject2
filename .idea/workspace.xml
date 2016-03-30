@@ -5,12 +5,6 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/574563_296015173813188_590469099_n.jpg" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/Acer_Aspire_P3-c.jpg" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/Web-Design-Wallpapers-1.png" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin.php" afterPath="$PROJECT_DIR$/admin.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/index.css" afterPath="$PROJECT_DIR$/css/index.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/login.php" afterPath="$PROJECT_DIR$/login.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mydetails.php" afterPath="$PROJECT_DIR$/mydetails.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/signup.php" afterPath="$PROJECT_DIR$/signup.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="it-mini-project.iws" />
@@ -150,7 +144,7 @@
       <file leaf-file-name="signup.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/signup.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.46753246" vertical-offset="216" max-vertical-offset="11934">
+            <state vertical-scroll-proportion="-0.033395175" vertical-offset="486" max-vertical-offset="11934">
               <caret line="26" column="30" selection-start-line="26" selection-start-column="30" selection-end-line="26" selection-end-column="30" />
               <folding>
                 <element signature="e#4080#4612#0#PHP" expanded="false" />
@@ -1005,7 +999,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/signup.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.46753246" vertical-offset="216" max-vertical-offset="11934">
+        <state vertical-scroll-proportion="-0.033395175" vertical-offset="486" max-vertical-offset="11934">
           <caret line="26" column="30" selection-start-line="26" selection-start-column="30" selection-end-line="26" selection-end-column="30" />
           <folding>
             <element signature="e#4080#4612#0#PHP" expanded="false" />
