@@ -29,6 +29,8 @@ if (isset($_GET["user"]) && isset($_SESSION['email']) && (($_GET["user"]) == $_S
     $user_hobby = $row['hobby'];
     $user_active = $row['activated'];
     $user_image = $row['image'];
+    $user_country = $row['country'];
+    $user_state = $row['state'];
     if ($user_active === '2' || $_SESSION['type'] == 'admin') {
         $_SESSION['active'] = true;
     }
@@ -223,10 +225,11 @@ if (isset($_GET["user"]) && isset($_SESSION['email']) && (($_GET["user"]) == $_S
             <div id="navbar" class="collapse navbar-collapse">
                 <ul class="nav navbar-nav">
                     <li class="active"><a href="index.php">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="blog.html">Blog</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <?php
+                    if ($_SESSION['type'] == "admin") {
+                        echo '<li><a href="admin.php">Admin</a></li>';
+                    }
+                    ?>
                 </ul>
                 <ul class="nav navbar-nav navbar-sub pull-right">
                     <?php
@@ -269,6 +272,12 @@ if (isset($_GET["user"]) && isset($_SESSION['email']) && (($_GET["user"]) == $_S
             style="margin-left: 40px; color: #3f3f46; font-size: 18px;">Gender:  </span><?php echo $user_gender; ?></div>
     <div class="hobby"><span
             style="margin-left: 40px; color: #3f3f46; font-size: 18px;">Hobbies:  </span><?php echo $user_hobby; ?></div>
+</div>
+<div class="data-container">
+    <div class="gender"><span
+            style="margin-left: 40px; color: #3f3f46; font-size: 18px;">Country:  </span><?php echo $user_country; ?></div>
+    <div class="hobby"><span
+            style="margin-left: 40px; color: #3f3f46; font-size: 18px;">State:  </span><?php echo $user_state; ?></div>
 </div>
 <br><br>
 

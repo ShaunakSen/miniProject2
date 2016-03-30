@@ -67,10 +67,9 @@ function redirect_to($url)
             <div id="navbar" class="collapse navbar-collapse">
                 <ul class="nav navbar-nav">
                     <li class="active"><a href="index.php">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="blog.html">Blog</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="#services" class="smoothScroll">Services</a></li>
+                    <li><a href="#locate" class="smoothScroll">Locate Us</a></li>
+                    <li><a href="#contact" class="smoothScroll">Contact</a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-sub pull-right">
                     <?php
@@ -147,7 +146,7 @@ function redirect_to($url)
         <img src="img/right-arrow.png" alt="Next" id="next">
     </div>
     <br><br>
-
+    <a name="locate"></a>
     <div class="row">
         <div class="col-sm-1"></div>
         <div class="col-sm-10">
@@ -160,7 +159,7 @@ function redirect_to($url)
 
     <div class="content">
         <div class="row">
-        <h1>What We Do</h1>
+            <a name="services"></a><h1>What We Do</h1>
         <hr>
         <div class="row">
             <div class="col-sm-1"></div>
@@ -184,6 +183,7 @@ function redirect_to($url)
             </div>
             <div class="col-sm-1"></div>
         </div>
+            <a name="contact"></a>
         <h1> Brought to you by...</h1>
         <hr>
         <div class="row">
@@ -213,6 +213,6 @@ function redirect_to($url)
 
     </div>
 </div>
-
+    <script src="js/smoothscroll.js"></script>
 </body>
 </html>

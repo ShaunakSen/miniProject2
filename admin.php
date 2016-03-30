@@ -165,10 +165,9 @@ function redirect_to($url)
             <div id="navbar" class="collapse navbar-collapse">
                 <ul class="nav navbar-nav">
                     <li class="active"><a href="index.php">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="blog.html">Blog</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <?php
+                    echo '<li><a href="mydetails.php?user='.$_SESSION["email"].'">Back to My Details</a></li>';
+                    ?>
                 </ul>
                 <ul class="nav navbar-nav navbar-sub pull-right">
                     <?
@@ -197,8 +196,8 @@ if ((isset($_SESSION['email'])) && ($_SESSION['type'] == "admin")) {
         while ($row2 = $query->fetch_assoc()) {
             echo '<div class="details">Name: ' . $row2['first_name'] . ' ' . $row2['last_name'] . '<br> Email: ' .
                 $row2['email'] . '<br>Phone Number: ' . $row2['phone_number'] . '<br>Roll Number: ' . $row2['roll_no'] . '<br>Date of Birth: ' .
-                $row2['dob'] . '<br>Dept: ' . $row2['dept'] . '<br>Gender: ' . $row2['gender'] . '<br>Hobbies: ' . $row2['hobby'] .
-                '<div class="activate">' . '<a href="activation_from_admin.php?user=' . $row2['email'] . '">' . 'Activate User</a></div>' . '</div>';;
+                $row2['dob'] . '<br>Dept: ' . $row2['dept'] . '<br>Gender: ' . $row2['gender'] . '<br>Hobbies: ' . $row2['hobby'] .  '<br>Country: ' . $row2['country'] .'<br>State: ' . $row2['state'] .
+                '<br><div class="activate">' . '<a href="activation_from_admin.php?user=' . $row2['email'] . '">' . 'Activate User</a></div>' . '</div>';;
         }
     }
 } else {

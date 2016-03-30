@@ -2,16 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a6ac6a37-24b7-4548-af30-97d4fa1bf1f4" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/map.js" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/574563_296015173813188_590469099_n.jpg" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/Acer_Aspire_P3-c.jpg" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/Web-Design-Wallpapers-1.png" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin.php" afterPath="$PROJECT_DIR$/admin.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/edit_details.php" afterPath="$PROJECT_DIR$/edit_details.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/index.css" afterPath="$PROJECT_DIR$/css/index.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/login.php" afterPath="$PROJECT_DIR$/login.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mydetails.php" afterPath="$PROJECT_DIR$/mydetails.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/signup.css" afterPath="$PROJECT_DIR$/css/signup.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/signup.php" afterPath="$PROJECT_DIR$/signup.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -47,30 +45,26 @@
       <file leaf-file-name="login.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/login.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="33.333332" vertical-offset="1620" max-vertical-offset="6912">
-              <caret line="40" column="23" selection-start-line="40" selection-start-column="23" selection-end-line="40" selection-end-column="23" />
+            <state vertical-scroll-proportion="-133.33333" vertical-offset="1188" max-vertical-offset="6840">
+              <caret line="266" column="73" selection-start-line="266" selection-start-column="73" selection-end-line="266" selection-end-column="73" />
               <folding>
-                <marker date="1459225348090" expanded="true" signature="344:403" placeholder="SELECT * FRO..users_registered..." />
-                <marker date="1459225348090" expanded="true" signature="529:543" placeholder="..." />
-                <marker date="1459225348090" expanded="true" signature="612:626" placeholder="..." />
-                <marker date="1459225348090" expanded="true" signature="702:716" placeholder="..." />
-                <marker date="1459225348090" expanded="true" signature="978:1071" placeholder="SELECT * FRO..users_registered..." />
-                <marker date="1459225348090" expanded="true" signature="2488:2580" placeholder="SELECT * FRO..users_registered..." />
+                <marker date="1459306744265" expanded="true" signature="344:403" placeholder="SELECT * FRO..users_registered..." />
+                <marker date="1459306744265" expanded="true" signature="529:543" placeholder="..." />
+                <marker date="1459306744265" expanded="true" signature="612:626" placeholder="..." />
+                <marker date="1459306744265" expanded="true" signature="702:716" placeholder="..." />
+                <marker date="1459306744265" expanded="true" signature="978:1071" placeholder="SELECT * FRO..users_registered..." />
+                <marker date="1459306744265" expanded="true" signature="2488:2580" placeholder="SELECT * FRO..users_registered..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6463654" vertical-offset="2011" max-vertical-offset="3366">
-              <caret line="167" column="59" selection-start-line="167" selection-start-column="59" selection-end-line="167" selection-end-column="59" />
-              <folding>
-                <element signature="n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#style#0;n#h1#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
+            <state vertical-scroll-proportion="0.0" vertical-offset="2664" max-vertical-offset="4032">
+              <caret line="148" column="19" selection-start-line="148" selection-start-column="19" selection-end-line="148" selection-end-column="19" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -78,8 +72,8 @@
       <file leaf-file-name="index.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/index.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-8.933333" vertical-offset="1280" max-vertical-offset="3258">
-              <caret line="86" column="13" selection-start-line="84" selection-start-column="4" selection-end-line="86" selection-end-column="13" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="2758" max-vertical-offset="3294">
+              <caret line="166" column="1" selection-start-line="166" selection-start-column="1" selection-end-line="166" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -98,10 +92,11 @@
       <file leaf-file-name="admin.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/admin.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-6.6" vertical-offset="2916" max-vertical-offset="3852">
-              <caret line="173" column="22" selection-start-line="173" selection-start-column="20" selection-end-line="173" selection-end-column="22" />
+            <state vertical-scroll-proportion="-16.851852" vertical-offset="2569" max-vertical-offset="3834">
+              <caret line="168" column="81" selection-start-line="168" selection-start-column="81" selection-end-line="168" selection-end-column="81" />
               <folding>
-                <marker date="1459262220352" expanded="true" signature="5215:5283" placeholder="SELECT * FRO..users_registered..." />
+                <marker date="1459306657101" expanded="true" signature="4533:4596" placeholder="..." />
+                <marker date="1459306657101" expanded="true" signature="5128:5196" placeholder="SELECT * FRO..users_registered..." />
               </folding>
             </state>
           </provider>
@@ -110,33 +105,66 @@
       <file leaf-file-name="mydetails.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mydetails.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-7.3703704" vertical-offset="3959" max-vertical-offset="5418">
-              <caret line="231" column="22" selection-start-line="231" selection-start-column="20" selection-end-line="231" selection-end-column="22" />
+            <state vertical-scroll-proportion="-8.62963" vertical-offset="1009" max-vertical-offset="2700">
+              <caret line="229" column="59" selection-start-line="229" selection-start-column="59" selection-end-line="229" selection-end-column="59" />
               <folding>
-                <marker date="1459271963613" expanded="true" signature="292:351" placeholder="SELECT * FRO..users_registered..." />
+                <element signature="n#style#0;n#head#0;n#html#0;n#!!top" expanded="false" />
+                <marker date="1459306194889" expanded="true" signature="292:351" placeholder="SELECT * FRO..users_registered..." />
+                <marker date="1459306194889" expanded="true" signature="6775:6842" placeholder="..." />
+                <marker date="1459306194889" expanded="true" signature="7274:7572" placeholder="..." />
+                <marker date="1459306194889" expanded="true" signature="7601:7916" placeholder="..." />
+                <marker date="1459306194889" expanded="true" signature="7625:7757" placeholder="..." />
+                <marker date="1459306194889" expanded="true" signature="7631:7725" placeholder="..." />
+                <marker date="1459306194889" expanded="true" signature="7655:7706" placeholder="..." />
+                <marker date="1459306194889" expanded="true" signature="7781:7909" placeholder="..." />
+                <marker date="1459306194889" expanded="true" signature="7787:7877" placeholder="..." />
+                <marker date="1459306194889" expanded="true" signature="7807:7858" placeholder="..." />
+                <marker date="1459306194889" expanded="true" signature="7945:8262" placeholder="..." />
+                <marker date="1459306194889" expanded="true" signature="7967:8103" placeholder="..." />
+                <marker date="1459306194889" expanded="true" signature="7973:8068" placeholder="..." />
+                <marker date="1459306194889" expanded="true" signature="7993:8044" placeholder="..." />
+                <marker date="1459306194889" expanded="true" signature="8126:8255" placeholder="..." />
+                <marker date="1459306194889" expanded="true" signature="8132:8224" placeholder="..." />
+                <marker date="1459306194889" expanded="true" signature="8152:8203" placeholder="..." />
+                <marker date="1459306194889" expanded="true" signature="8291:8601" placeholder="..." />
+                <marker date="1459306194889" expanded="true" signature="8316:8443" placeholder="..." />
+                <marker date="1459306194889" expanded="true" signature="8322:8410" placeholder="..." />
+                <marker date="1459306194889" expanded="true" signature="8342:8393" placeholder="..." />
+                <marker date="1459306194889" expanded="true" signature="8467:8594" placeholder="..." />
+                <marker date="1459306194889" expanded="true" signature="8473:8562" placeholder="..." />
+                <marker date="1459306194889" expanded="true" signature="8493:8544" placeholder="..." />
+                <marker date="1459306194889" expanded="true" signature="8630:8940" placeholder="..." />
+                <marker date="1459306194889" expanded="true" signature="8655:8784" placeholder="..." />
+                <marker date="1459306194889" expanded="true" signature="8661:8750" placeholder="..." />
+                <marker date="1459306194889" expanded="true" signature="8681:8732" placeholder="..." />
+                <marker date="1459306194889" expanded="true" signature="8808:8933" placeholder="..." />
+                <marker date="1459306194889" expanded="true" signature="8814:8901" placeholder="..." />
+                <marker date="1459306194889" expanded="true" signature="8834:8885" placeholder="..." />
+                <marker date="1459306194889" expanded="true" signature="8968:9074" placeholder="..." />
+                <marker date="1459306194889" expanded="true" signature="9028:9074" placeholder="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="signup.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="signup.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/signup.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-15.296296" vertical-offset="7327" max-vertical-offset="11160">
-              <caret line="443" column="21" selection-start-line="443" selection-start-column="21" selection-end-line="443" selection-end-column="21" />
+            <state vertical-scroll-proportion="0.46753246" vertical-offset="216" max-vertical-offset="11934">
+              <caret line="26" column="30" selection-start-line="26" selection-start-column="30" selection-end-line="26" selection-end-column="30" />
               <folding>
-                <element signature="e#3952#4484#0#PHP" expanded="false" />
-                <marker date="1459276605432" expanded="true" signature="524:566" placeholder="SELECT MAX(i..users_registered..." />
-                <marker date="1459276605432" expanded="true" signature="714:775" placeholder="UPDATE users..." />
-                <marker date="1459276605432" expanded="true" signature="1318:1377" placeholder="SELECT * FRO..users_registered..." />
-                <marker date="1459276605432" expanded="true" signature="2227:2441" placeholder="INSERT INTO ..." />
-                <marker date="1459276605432" expanded="true" signature="4057:4116" placeholder="SELECT * FRO..users_registered..." />
-                <marker date="1459276605432" expanded="true" signature="4242:4256" placeholder="..." />
-                <marker date="1459276605432" expanded="true" signature="4325:4339" placeholder="..." />
-                <marker date="1459276605432" expanded="true" signature="4415:4429" placeholder="..." />
-                <marker date="1459276605432" expanded="true" signature="6026:6054" placeholder="..." />
-                <marker date="1459276605432" expanded="true" signature="9301:9412" placeholder="..." />
-                <marker date="1459276605432" expanded="true" signature="9715:9744" placeholder="..." />
+                <element signature="e#4080#4612#0#PHP" expanded="false" />
+                <marker date="1459307069661" expanded="true" signature="524:566" placeholder="SELECT MAX(i..users_registered..." />
+                <marker date="1459307069661" expanded="true" signature="714:775" placeholder="UPDATE users..." />
+                <marker date="1459307069661" expanded="true" signature="1412:1471" placeholder="SELECT * FRO..users_registered..." />
+                <marker date="1459307069661" expanded="true" signature="2321:2569" placeholder="INSERT INTO ..." />
+                <marker date="1459307069661" expanded="true" signature="4185:4244" placeholder="SELECT * FRO..users_registered..." />
+                <marker date="1459307069661" expanded="true" signature="4370:4384" placeholder="..." />
+                <marker date="1459307069661" expanded="true" signature="4453:4467" placeholder="..." />
+                <marker date="1459307069661" expanded="true" signature="4543:4557" placeholder="..." />
+                <marker date="1459307069661" expanded="true" signature="6154:6182" placeholder="..." />
+                <marker date="1459307069661" expanded="true" signature="9429:9540" placeholder="..." />
+                <marker date="1459307069661" expanded="true" signature="9843:9872" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -186,15 +214,15 @@
         <option value="$PROJECT_DIR$/message.php" />
         <option value="$PROJECT_DIR$/fragments/admin.html" />
         <option value="$PROJECT_DIR$/fragments/student.html" />
-        <option value="$PROJECT_DIR$/login.php" />
-        <option value="$PROJECT_DIR$/admin.php" />
-        <option value="$PROJECT_DIR$/mydetails.php" />
         <option value="$PROJECT_DIR$/edit_details.php" />
         <option value="$PROJECT_DIR$/css/signup.css" />
-        <option value="$PROJECT_DIR$/signup.php" />
         <option value="$PROJECT_DIR$/js/map.js" />
         <option value="$PROJECT_DIR$/css/index.css" />
         <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/mydetails.php" />
+        <option value="$PROJECT_DIR$/admin.php" />
+        <option value="$PROJECT_DIR$/login.php" />
+        <option value="$PROJECT_DIR$/signup.php" />
       </list>
     </option>
   </component>
@@ -253,6 +281,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -315,7 +344,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -332,6 +360,11 @@
     <property name="recentsLimit" value="5" />
     <property name="restartRequiresConfirmation" value="true" />
     <property name="full.screen.before.presentation.mode" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/js" />
+    </key>
   </component>
   <component name="RunManager" selected="PHP Script.Unnamed">
     <configuration default="true" type="PhpWebAppRunConfigurationType" factoryName="PHP Web Application">
@@ -463,19 +496,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/message.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="60" max-vertical-offset="612">
-          <caret line="15" column="87" selection-start-line="15" selection-start-column="87" selection-end-line="15" selection-end-column="87" />
-          <folding>
-            <marker date="1459104533540" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1459104533540" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1459104533540" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1459104533540" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/mydetails.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="78" max-vertical-offset="990">
@@ -509,18 +529,18 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="7344">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#3952#4484#0#PHP" expanded="false" />
-            <marker date="1459276605432" expanded="true" signature="524:566" placeholder="SELECT MAX(i..users_registered..." />
-            <marker date="1459276605432" expanded="true" signature="714:775" placeholder="UPDATE users..." />
-            <marker date="1459276605432" expanded="true" signature="1318:1377" placeholder="SELECT * FRO..users_registered..." />
-            <marker date="1459276605432" expanded="true" signature="2227:2441" placeholder="INSERT INTO ..." />
-            <marker date="1459276605432" expanded="true" signature="4057:4116" placeholder="SELECT * FRO..users_registered..." />
-            <marker date="1459276605432" expanded="true" signature="4242:4256" placeholder="..." />
-            <marker date="1459276605432" expanded="true" signature="4325:4339" placeholder="..." />
-            <marker date="1459276605432" expanded="true" signature="4415:4429" placeholder="..." />
-            <marker date="1459276605432" expanded="true" signature="6026:6054" placeholder="..." />
-            <marker date="1459276605432" expanded="true" signature="9301:9412" placeholder="..." />
-            <marker date="1459276605432" expanded="true" signature="9715:9744" placeholder="..." />
+            <element signature="e#4080#4612#0#PHP" expanded="false" />
+            <marker date="1459307069661" expanded="true" signature="524:566" placeholder="SELECT MAX(i..users_registered..." />
+            <marker date="1459307069661" expanded="true" signature="714:775" placeholder="UPDATE users..." />
+            <marker date="1459307069661" expanded="true" signature="1412:1471" placeholder="SELECT * FRO..users_registered..." />
+            <marker date="1459307069661" expanded="true" signature="2321:2569" placeholder="INSERT INTO ..." />
+            <marker date="1459307069661" expanded="true" signature="4185:4244" placeholder="SELECT * FRO..users_registered..." />
+            <marker date="1459307069661" expanded="true" signature="4370:4384" placeholder="..." />
+            <marker date="1459307069661" expanded="true" signature="4453:4467" placeholder="..." />
+            <marker date="1459307069661" expanded="true" signature="4543:4557" placeholder="..." />
+            <marker date="1459307069661" expanded="true" signature="6154:6182" placeholder="..." />
+            <marker date="1459307069661" expanded="true" signature="9429:9540" placeholder="..." />
+            <marker date="1459307069661" expanded="true" signature="9843:9872" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -544,18 +564,18 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="6588">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#3952#4484#0#PHP" expanded="false" />
-            <marker date="1459276605432" expanded="true" signature="524:566" placeholder="SELECT MAX(i..users_registered..." />
-            <marker date="1459276605432" expanded="true" signature="714:775" placeholder="UPDATE users..." />
-            <marker date="1459276605432" expanded="true" signature="1318:1377" placeholder="SELECT * FRO..users_registered..." />
-            <marker date="1459276605432" expanded="true" signature="2227:2441" placeholder="INSERT INTO ..." />
-            <marker date="1459276605432" expanded="true" signature="4057:4116" placeholder="SELECT * FRO..users_registered..." />
-            <marker date="1459276605432" expanded="true" signature="4242:4256" placeholder="..." />
-            <marker date="1459276605432" expanded="true" signature="4325:4339" placeholder="..." />
-            <marker date="1459276605432" expanded="true" signature="4415:4429" placeholder="..." />
-            <marker date="1459276605432" expanded="true" signature="6026:6054" placeholder="..." />
-            <marker date="1459276605432" expanded="true" signature="9301:9412" placeholder="..." />
-            <marker date="1459276605432" expanded="true" signature="9715:9744" placeholder="..." />
+            <element signature="e#4080#4612#0#PHP" expanded="false" />
+            <marker date="1459307069661" expanded="true" signature="524:566" placeholder="SELECT MAX(i..users_registered..." />
+            <marker date="1459307069661" expanded="true" signature="714:775" placeholder="UPDATE users..." />
+            <marker date="1459307069661" expanded="true" signature="1412:1471" placeholder="SELECT * FRO..users_registered..." />
+            <marker date="1459307069661" expanded="true" signature="2321:2569" placeholder="INSERT INTO ..." />
+            <marker date="1459307069661" expanded="true" signature="4185:4244" placeholder="SELECT * FRO..users_registered..." />
+            <marker date="1459307069661" expanded="true" signature="4370:4384" placeholder="..." />
+            <marker date="1459307069661" expanded="true" signature="4453:4467" placeholder="..." />
+            <marker date="1459307069661" expanded="true" signature="4543:4557" placeholder="..." />
+            <marker date="1459307069661" expanded="true" signature="6154:6182" placeholder="..." />
+            <marker date="1459307069661" expanded="true" signature="9429:9540" placeholder="..." />
+            <marker date="1459307069661" expanded="true" signature="9843:9872" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -579,18 +599,18 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="6588">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#3952#4484#0#PHP" expanded="false" />
-            <marker date="1459276605432" expanded="true" signature="524:566" placeholder="SELECT MAX(i..users_registered..." />
-            <marker date="1459276605432" expanded="true" signature="714:775" placeholder="UPDATE users..." />
-            <marker date="1459276605432" expanded="true" signature="1318:1377" placeholder="SELECT * FRO..users_registered..." />
-            <marker date="1459276605432" expanded="true" signature="2227:2441" placeholder="INSERT INTO ..." />
-            <marker date="1459276605432" expanded="true" signature="4057:4116" placeholder="SELECT * FRO..users_registered..." />
-            <marker date="1459276605432" expanded="true" signature="4242:4256" placeholder="..." />
-            <marker date="1459276605432" expanded="true" signature="4325:4339" placeholder="..." />
-            <marker date="1459276605432" expanded="true" signature="4415:4429" placeholder="..." />
-            <marker date="1459276605432" expanded="true" signature="6026:6054" placeholder="..." />
-            <marker date="1459276605432" expanded="true" signature="9301:9412" placeholder="..." />
-            <marker date="1459276605432" expanded="true" signature="9715:9744" placeholder="..." />
+            <element signature="e#4080#4612#0#PHP" expanded="false" />
+            <marker date="1459307069661" expanded="true" signature="524:566" placeholder="SELECT MAX(i..users_registered..." />
+            <marker date="1459307069661" expanded="true" signature="714:775" placeholder="UPDATE users..." />
+            <marker date="1459307069661" expanded="true" signature="1412:1471" placeholder="SELECT * FRO..users_registered..." />
+            <marker date="1459307069661" expanded="true" signature="2321:2569" placeholder="INSERT INTO ..." />
+            <marker date="1459307069661" expanded="true" signature="4185:4244" placeholder="SELECT * FRO..users_registered..." />
+            <marker date="1459307069661" expanded="true" signature="4370:4384" placeholder="..." />
+            <marker date="1459307069661" expanded="true" signature="4453:4467" placeholder="..." />
+            <marker date="1459307069661" expanded="true" signature="4543:4557" placeholder="..." />
+            <marker date="1459307069661" expanded="true" signature="6154:6182" placeholder="..." />
+            <marker date="1459307069661" expanded="true" signature="9429:9540" placeholder="..." />
+            <marker date="1459307069661" expanded="true" signature="9843:9872" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -614,18 +634,18 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="3078" max-vertical-offset="5094">
           <caret line="184" column="23" selection-start-line="184" selection-start-column="23" selection-end-line="184" selection-end-column="23" />
           <folding>
-            <element signature="e#3952#4484#0#PHP" expanded="false" />
-            <marker date="1459276605432" expanded="true" signature="524:566" placeholder="SELECT MAX(i..users_registered..." />
-            <marker date="1459276605432" expanded="true" signature="714:775" placeholder="UPDATE users..." />
-            <marker date="1459276605432" expanded="true" signature="1318:1377" placeholder="SELECT * FRO..users_registered..." />
-            <marker date="1459276605432" expanded="true" signature="2227:2441" placeholder="INSERT INTO ..." />
-            <marker date="1459276605432" expanded="true" signature="4057:4116" placeholder="SELECT * FRO..users_registered..." />
-            <marker date="1459276605432" expanded="true" signature="4242:4256" placeholder="..." />
-            <marker date="1459276605432" expanded="true" signature="4325:4339" placeholder="..." />
-            <marker date="1459276605432" expanded="true" signature="4415:4429" placeholder="..." />
-            <marker date="1459276605432" expanded="true" signature="6026:6054" placeholder="..." />
-            <marker date="1459276605432" expanded="true" signature="9301:9412" placeholder="..." />
-            <marker date="1459276605432" expanded="true" signature="9715:9744" placeholder="..." />
+            <element signature="e#4080#4612#0#PHP" expanded="false" />
+            <marker date="1459307069661" expanded="true" signature="524:566" placeholder="SELECT MAX(i..users_registered..." />
+            <marker date="1459307069661" expanded="true" signature="714:775" placeholder="UPDATE users..." />
+            <marker date="1459307069661" expanded="true" signature="1412:1471" placeholder="SELECT * FRO..users_registered..." />
+            <marker date="1459307069661" expanded="true" signature="2321:2569" placeholder="INSERT INTO ..." />
+            <marker date="1459307069661" expanded="true" signature="4185:4244" placeholder="SELECT * FRO..users_registered..." />
+            <marker date="1459307069661" expanded="true" signature="4370:4384" placeholder="..." />
+            <marker date="1459307069661" expanded="true" signature="4453:4467" placeholder="..." />
+            <marker date="1459307069661" expanded="true" signature="4543:4557" placeholder="..." />
+            <marker date="1459307069661" expanded="true" signature="6154:6182" placeholder="..." />
+            <marker date="1459307069661" expanded="true" signature="9429:9540" placeholder="..." />
+            <marker date="1459307069661" expanded="true" signature="9843:9872" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -649,18 +669,18 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="3078" max-vertical-offset="5094">
           <caret line="184" column="23" selection-start-line="184" selection-start-column="23" selection-end-line="184" selection-end-column="23" />
           <folding>
-            <element signature="e#3952#4484#0#PHP" expanded="false" />
-            <marker date="1459276605432" expanded="true" signature="524:566" placeholder="SELECT MAX(i..users_registered..." />
-            <marker date="1459276605432" expanded="true" signature="714:775" placeholder="UPDATE users..." />
-            <marker date="1459276605432" expanded="true" signature="1318:1377" placeholder="SELECT * FRO..users_registered..." />
-            <marker date="1459276605432" expanded="true" signature="2227:2441" placeholder="INSERT INTO ..." />
-            <marker date="1459276605432" expanded="true" signature="4057:4116" placeholder="SELECT * FRO..users_registered..." />
-            <marker date="1459276605432" expanded="true" signature="4242:4256" placeholder="..." />
-            <marker date="1459276605432" expanded="true" signature="4325:4339" placeholder="..." />
-            <marker date="1459276605432" expanded="true" signature="4415:4429" placeholder="..." />
-            <marker date="1459276605432" expanded="true" signature="6026:6054" placeholder="..." />
-            <marker date="1459276605432" expanded="true" signature="9301:9412" placeholder="..." />
-            <marker date="1459276605432" expanded="true" signature="9715:9744" placeholder="..." />
+            <element signature="e#4080#4612#0#PHP" expanded="false" />
+            <marker date="1459307069661" expanded="true" signature="524:566" placeholder="SELECT MAX(i..users_registered..." />
+            <marker date="1459307069661" expanded="true" signature="714:775" placeholder="UPDATE users..." />
+            <marker date="1459307069661" expanded="true" signature="1412:1471" placeholder="SELECT * FRO..users_registered..." />
+            <marker date="1459307069661" expanded="true" signature="2321:2569" placeholder="INSERT INTO ..." />
+            <marker date="1459307069661" expanded="true" signature="4185:4244" placeholder="SELECT * FRO..users_registered..." />
+            <marker date="1459307069661" expanded="true" signature="4370:4384" placeholder="..." />
+            <marker date="1459307069661" expanded="true" signature="4453:4467" placeholder="..." />
+            <marker date="1459307069661" expanded="true" signature="4543:4557" placeholder="..." />
+            <marker date="1459307069661" expanded="true" signature="6154:6182" placeholder="..." />
+            <marker date="1459307069661" expanded="true" signature="9429:9540" placeholder="..." />
+            <marker date="1459307069661" expanded="true" signature="9843:9872" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -684,18 +704,18 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="5130">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#3952#4484#0#PHP" expanded="false" />
-            <marker date="1459276605432" expanded="true" signature="524:566" placeholder="SELECT MAX(i..users_registered..." />
-            <marker date="1459276605432" expanded="true" signature="714:775" placeholder="UPDATE users..." />
-            <marker date="1459276605432" expanded="true" signature="1318:1377" placeholder="SELECT * FRO..users_registered..." />
-            <marker date="1459276605432" expanded="true" signature="2227:2441" placeholder="INSERT INTO ..." />
-            <marker date="1459276605432" expanded="true" signature="4057:4116" placeholder="SELECT * FRO..users_registered..." />
-            <marker date="1459276605432" expanded="true" signature="4242:4256" placeholder="..." />
-            <marker date="1459276605432" expanded="true" signature="4325:4339" placeholder="..." />
-            <marker date="1459276605432" expanded="true" signature="4415:4429" placeholder="..." />
-            <marker date="1459276605432" expanded="true" signature="6026:6054" placeholder="..." />
-            <marker date="1459276605432" expanded="true" signature="9301:9412" placeholder="..." />
-            <marker date="1459276605432" expanded="true" signature="9715:9744" placeholder="..." />
+            <element signature="e#4080#4612#0#PHP" expanded="false" />
+            <marker date="1459307069661" expanded="true" signature="524:566" placeholder="SELECT MAX(i..users_registered..." />
+            <marker date="1459307069661" expanded="true" signature="714:775" placeholder="UPDATE users..." />
+            <marker date="1459307069661" expanded="true" signature="1412:1471" placeholder="SELECT * FRO..users_registered..." />
+            <marker date="1459307069661" expanded="true" signature="2321:2569" placeholder="INSERT INTO ..." />
+            <marker date="1459307069661" expanded="true" signature="4185:4244" placeholder="SELECT * FRO..users_registered..." />
+            <marker date="1459307069661" expanded="true" signature="4370:4384" placeholder="..." />
+            <marker date="1459307069661" expanded="true" signature="4453:4467" placeholder="..." />
+            <marker date="1459307069661" expanded="true" signature="4543:4557" placeholder="..." />
+            <marker date="1459307069661" expanded="true" signature="6154:6182" placeholder="..." />
+            <marker date="1459307069661" expanded="true" signature="9429:9540" placeholder="..." />
+            <marker date="1459307069661" expanded="true" signature="9843:9872" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -712,18 +732,18 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3942">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#3952#4484#0#PHP" expanded="false" />
-            <marker date="1459276605432" expanded="true" signature="524:566" placeholder="SELECT MAX(i..users_registered..." />
-            <marker date="1459276605432" expanded="true" signature="714:775" placeholder="UPDATE users..." />
-            <marker date="1459276605432" expanded="true" signature="1318:1377" placeholder="SELECT * FRO..users_registered..." />
-            <marker date="1459276605432" expanded="true" signature="2227:2441" placeholder="INSERT INTO ..." />
-            <marker date="1459276605432" expanded="true" signature="4057:4116" placeholder="SELECT * FRO..users_registered..." />
-            <marker date="1459276605432" expanded="true" signature="4242:4256" placeholder="..." />
-            <marker date="1459276605432" expanded="true" signature="4325:4339" placeholder="..." />
-            <marker date="1459276605432" expanded="true" signature="4415:4429" placeholder="..." />
-            <marker date="1459276605432" expanded="true" signature="6026:6054" placeholder="..." />
-            <marker date="1459276605432" expanded="true" signature="9301:9412" placeholder="..." />
-            <marker date="1459276605432" expanded="true" signature="9715:9744" placeholder="..." />
+            <element signature="e#4080#4612#0#PHP" expanded="false" />
+            <marker date="1459307069661" expanded="true" signature="524:566" placeholder="SELECT MAX(i..users_registered..." />
+            <marker date="1459307069661" expanded="true" signature="714:775" placeholder="UPDATE users..." />
+            <marker date="1459307069661" expanded="true" signature="1412:1471" placeholder="SELECT * FRO..users_registered..." />
+            <marker date="1459307069661" expanded="true" signature="2321:2569" placeholder="INSERT INTO ..." />
+            <marker date="1459307069661" expanded="true" signature="4185:4244" placeholder="SELECT * FRO..users_registered..." />
+            <marker date="1459307069661" expanded="true" signature="4370:4384" placeholder="..." />
+            <marker date="1459307069661" expanded="true" signature="4453:4467" placeholder="..." />
+            <marker date="1459307069661" expanded="true" signature="4543:4557" placeholder="..." />
+            <marker date="1459307069661" expanded="true" signature="6154:6182" placeholder="..." />
+            <marker date="1459307069661" expanded="true" signature="9429:9540" placeholder="..." />
+            <marker date="1459307069661" expanded="true" signature="9843:9872" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -856,47 +876,45 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.68431" vertical-offset="103" max-vertical-offset="1054">
           <caret line="15" column="87" selection-start-line="15" selection-start-column="87" selection-end-line="15" selection-end-column="87" />
-          <folding>
-            <marker date="1459104533540" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1459104533540" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1459104533540" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1459104533540" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/admin.php">
+    <entry file="file://$PROJECT_DIR$/css/signup.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.6" vertical-offset="2916" max-vertical-offset="3852">
-          <caret line="173" column="22" selection-start-line="173" selection-start-column="20" selection-end-line="173" selection-end-column="22" />
-          <folding>
-            <marker date="1459262220352" expanded="true" signature="5215:5283" placeholder="SELECT * FRO..users_registered..." />
-          </folding>
+        <state vertical-scroll-proportion="0.8091873" vertical-offset="3916" max-vertical-offset="4482">
+          <caret line="243" column="0" selection-start-line="243" selection-start-column="0" selection-end-line="243" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/login.php">
+    <entry file="file://$PROJECT_DIR$/js/map.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="33.333332" vertical-offset="1620" max-vertical-offset="6912">
-          <caret line="40" column="23" selection-start-line="40" selection-start-column="23" selection-end-line="40" selection-end-column="23" />
-          <folding>
-            <marker date="1459225348090" expanded="true" signature="344:403" placeholder="SELECT * FRO..users_registered..." />
-            <marker date="1459225348090" expanded="true" signature="529:543" placeholder="..." />
-            <marker date="1459225348090" expanded="true" signature="612:626" placeholder="..." />
-            <marker date="1459225348090" expanded="true" signature="702:716" placeholder="..." />
-            <marker date="1459225348090" expanded="true" signature="978:1071" placeholder="SELECT * FRO..users_registered..." />
-            <marker date="1459225348090" expanded="true" signature="2488:2580" placeholder="SELECT * FRO..users_registered..." />
-          </folding>
+        <state vertical-scroll-proportion="0.0" vertical-offset="280" max-vertical-offset="2628">
+          <caret line="137" column="0" selection-start-line="137" selection-start-column="0" selection-end-line="137" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mydetails.php">
+    <entry file="file://$PROJECT_DIR$/js/smoothscroll.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.3703704" vertical-offset="3959" max-vertical-offset="5418">
-          <caret line="231" column="22" selection-start-line="231" selection-start-column="20" selection-end-line="231" selection-end-column="22" />
-          <folding>
-            <marker date="1459271963613" expanded="true" signature="292:351" placeholder="SELECT * FRO..users_registered..." />
-          </folding>
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="576">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="2758" max-vertical-offset="3294">
+          <caret line="166" column="1" selection-start-line="166" selection-start-column="1" selection-end-line="166" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="2664" max-vertical-offset="4032">
+          <caret line="148" column="19" selection-start-line="148" selection-start-column="19" selection-end-line="148" selection-end-column="19" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -916,59 +934,92 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/signup.css">
+    <entry file="file://$PROJECT_DIR$/mydetails.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8091873" vertical-offset="3916" max-vertical-offset="4482">
-          <caret line="243" column="0" selection-start-line="243" selection-start-column="0" selection-end-line="243" selection-end-column="0" />
-          <folding />
+        <state vertical-scroll-proportion="-8.62963" vertical-offset="1009" max-vertical-offset="2700">
+          <caret line="229" column="59" selection-start-line="229" selection-start-column="59" selection-end-line="229" selection-end-column="59" />
+          <folding>
+            <element signature="n#style#0;n#head#0;n#html#0;n#!!top" expanded="false" />
+            <marker date="1459306194889" expanded="true" signature="292:351" placeholder="SELECT * FRO..users_registered..." />
+            <marker date="1459306194889" expanded="true" signature="6775:6842" placeholder="..." />
+            <marker date="1459306194889" expanded="true" signature="7274:7572" placeholder="..." />
+            <marker date="1459306194889" expanded="true" signature="7601:7916" placeholder="..." />
+            <marker date="1459306194889" expanded="true" signature="7625:7757" placeholder="..." />
+            <marker date="1459306194889" expanded="true" signature="7631:7725" placeholder="..." />
+            <marker date="1459306194889" expanded="true" signature="7655:7706" placeholder="..." />
+            <marker date="1459306194889" expanded="true" signature="7781:7909" placeholder="..." />
+            <marker date="1459306194889" expanded="true" signature="7787:7877" placeholder="..." />
+            <marker date="1459306194889" expanded="true" signature="7807:7858" placeholder="..." />
+            <marker date="1459306194889" expanded="true" signature="7945:8262" placeholder="..." />
+            <marker date="1459306194889" expanded="true" signature="7967:8103" placeholder="..." />
+            <marker date="1459306194889" expanded="true" signature="7973:8068" placeholder="..." />
+            <marker date="1459306194889" expanded="true" signature="7993:8044" placeholder="..." />
+            <marker date="1459306194889" expanded="true" signature="8126:8255" placeholder="..." />
+            <marker date="1459306194889" expanded="true" signature="8132:8224" placeholder="..." />
+            <marker date="1459306194889" expanded="true" signature="8152:8203" placeholder="..." />
+            <marker date="1459306194889" expanded="true" signature="8291:8601" placeholder="..." />
+            <marker date="1459306194889" expanded="true" signature="8316:8443" placeholder="..." />
+            <marker date="1459306194889" expanded="true" signature="8322:8410" placeholder="..." />
+            <marker date="1459306194889" expanded="true" signature="8342:8393" placeholder="..." />
+            <marker date="1459306194889" expanded="true" signature="8467:8594" placeholder="..." />
+            <marker date="1459306194889" expanded="true" signature="8473:8562" placeholder="..." />
+            <marker date="1459306194889" expanded="true" signature="8493:8544" placeholder="..." />
+            <marker date="1459306194889" expanded="true" signature="8630:8940" placeholder="..." />
+            <marker date="1459306194889" expanded="true" signature="8655:8784" placeholder="..." />
+            <marker date="1459306194889" expanded="true" signature="8661:8750" placeholder="..." />
+            <marker date="1459306194889" expanded="true" signature="8681:8732" placeholder="..." />
+            <marker date="1459306194889" expanded="true" signature="8808:8933" placeholder="..." />
+            <marker date="1459306194889" expanded="true" signature="8814:8901" placeholder="..." />
+            <marker date="1459306194889" expanded="true" signature="8834:8885" placeholder="..." />
+            <marker date="1459306194889" expanded="true" signature="8968:9074" placeholder="..." />
+            <marker date="1459306194889" expanded="true" signature="9028:9074" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-16.851852" vertical-offset="2569" max-vertical-offset="3834">
+          <caret line="168" column="81" selection-start-line="168" selection-start-column="81" selection-end-line="168" selection-end-column="81" />
+          <folding>
+            <marker date="1459306657101" expanded="true" signature="4533:4596" placeholder="..." />
+            <marker date="1459306657101" expanded="true" signature="5128:5196" placeholder="SELECT * FRO..users_registered..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-133.33333" vertical-offset="1188" max-vertical-offset="6840">
+          <caret line="266" column="73" selection-start-line="266" selection-start-column="73" selection-end-line="266" selection-end-column="73" />
+          <folding>
+            <marker date="1459306744265" expanded="true" signature="344:403" placeholder="SELECT * FRO..users_registered..." />
+            <marker date="1459306744265" expanded="true" signature="529:543" placeholder="..." />
+            <marker date="1459306744265" expanded="true" signature="612:626" placeholder="..." />
+            <marker date="1459306744265" expanded="true" signature="702:716" placeholder="..." />
+            <marker date="1459306744265" expanded="true" signature="978:1071" placeholder="SELECT * FRO..users_registered..." />
+            <marker date="1459306744265" expanded="true" signature="2488:2580" placeholder="SELECT * FRO..users_registered..." />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/signup.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-15.296296" vertical-offset="7327" max-vertical-offset="11160">
-          <caret line="443" column="21" selection-start-line="443" selection-start-column="21" selection-end-line="443" selection-end-column="21" />
+        <state vertical-scroll-proportion="0.46753246" vertical-offset="216" max-vertical-offset="11934">
+          <caret line="26" column="30" selection-start-line="26" selection-start-column="30" selection-end-line="26" selection-end-column="30" />
           <folding>
-            <element signature="e#3952#4484#0#PHP" expanded="false" />
-            <marker date="1459276605432" expanded="true" signature="524:566" placeholder="SELECT MAX(i..users_registered..." />
-            <marker date="1459276605432" expanded="true" signature="714:775" placeholder="UPDATE users..." />
-            <marker date="1459276605432" expanded="true" signature="1318:1377" placeholder="SELECT * FRO..users_registered..." />
-            <marker date="1459276605432" expanded="true" signature="2227:2441" placeholder="INSERT INTO ..." />
-            <marker date="1459276605432" expanded="true" signature="4057:4116" placeholder="SELECT * FRO..users_registered..." />
-            <marker date="1459276605432" expanded="true" signature="4242:4256" placeholder="..." />
-            <marker date="1459276605432" expanded="true" signature="4325:4339" placeholder="..." />
-            <marker date="1459276605432" expanded="true" signature="4415:4429" placeholder="..." />
-            <marker date="1459276605432" expanded="true" signature="6026:6054" placeholder="..." />
-            <marker date="1459276605432" expanded="true" signature="9301:9412" placeholder="..." />
-            <marker date="1459276605432" expanded="true" signature="9715:9744" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/map.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="280" max-vertical-offset="2628">
-          <caret line="137" column="0" selection-start-line="137" selection-start-column="0" selection-end-line="137" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/index.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.933333" vertical-offset="1280" max-vertical-offset="3258">
-          <caret line="86" column="13" selection-start-line="84" selection-start-column="4" selection-end-line="86" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6463654" vertical-offset="2011" max-vertical-offset="3366">
-          <caret line="167" column="59" selection-start-line="167" selection-start-column="59" selection-end-line="167" selection-end-column="59" />
-          <folding>
-            <element signature="n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#h1#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#4080#4612#0#PHP" expanded="false" />
+            <marker date="1459307069661" expanded="true" signature="524:566" placeholder="SELECT MAX(i..users_registered..." />
+            <marker date="1459307069661" expanded="true" signature="714:775" placeholder="UPDATE users..." />
+            <marker date="1459307069661" expanded="true" signature="1412:1471" placeholder="SELECT * FRO..users_registered..." />
+            <marker date="1459307069661" expanded="true" signature="2321:2569" placeholder="INSERT INTO ..." />
+            <marker date="1459307069661" expanded="true" signature="4185:4244" placeholder="SELECT * FRO..users_registered..." />
+            <marker date="1459307069661" expanded="true" signature="4370:4384" placeholder="..." />
+            <marker date="1459307069661" expanded="true" signature="4453:4467" placeholder="..." />
+            <marker date="1459307069661" expanded="true" signature="4543:4557" placeholder="..." />
+            <marker date="1459307069661" expanded="true" signature="6154:6182" placeholder="..." />
+            <marker date="1459307069661" expanded="true" signature="9429:9540" placeholder="..." />
+            <marker date="1459307069661" expanded="true" signature="9843:9872" placeholder="..." />
           </folding>
         </state>
       </provider>

@@ -265,10 +265,6 @@ if (isset($_POST["e1"])) {
             <div id="navbar" class="collapse navbar-collapse">
                 <ul class="nav navbar-nav">
                     <li class="active"><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="blog.html">Blog</a></li>
-                    <li><a href="contact.html">Contact</a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-sub pull-right">
                     <li><a href="signup.php">Register</a></li>

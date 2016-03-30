@@ -41,6 +41,8 @@ if (isset($_POST['e'])) {
     $dept = escape_string($_POST['dep']);
     $gender = escape_string($_POST['gen']);
     $hobby = escape_string($_POST['hobby']);
+    $country = escape_string($_POST['country']);
+    $state = escape_string($_POST['state']);
     $query = query("SELECT * FROM users_registered WHERE email='$email' LIMIT 1");
     confirm($query);
     $already_registered_check = mysqli_num_rows($query);
@@ -65,7 +67,7 @@ if (isset($_POST['e'])) {
         $p_hash = md5($pass);
         // Add user info into the database table for the main site table
         $req_id = get_id();
-        $sql = "INSERT INTO users_registered(first_name,last_name,email,phone_number,roll_no,dob,dept,gender,hobby,password) VALUES ('$first_name','$last_name','$email','$phone','$roll','$dob','$dept','$gender','$hobby','$p_hash')";
+        $sql = "INSERT INTO users_registered(first_name,last_name,email,phone_number,roll_no,dob,dept,gender,hobby,country,state,password) VALUES ('$first_name','$last_name','$email','$phone','$roll','$dob','$dept','$gender','$hobby','$country','$state','$p_hash')";
         $query = query($sql);
         confirm($query);
         $uid = get_id();
@@ -297,6 +299,8 @@ if (isset($_POST["emailcheck"])) {
             var dept = $("#dept").val();
             var phone_length = p.length;
             var checkedValue = "";
+            var country = _('slct1').value;
+            var state = _('slct2').value;
             var inputElements = document.getElementsByClassName('hobby');
             for (var i = 0; inputElements[i]; ++i) {
                 if (inputElements[i].checked) {
@@ -329,7 +333,7 @@ if (isset($_POST["emailcheck"])) {
             else
                 var gender = document.getElementById('female').value;
             var status = _("status").value;
-            if (e == "" || p1 == "" || p2 == "" || fn == "" || ln == "" || r == "" || dob == "" || dept == "") {
+            if (e == "" || p1 == "" || p2 == "" || fn == "" || ln == "" || r == "" || dob == "" || dept == "" || country=="" || state=="") {
                 _("status").innerHTML = "Please fill out all of the form data";
             }
             else if (p1 != p2) {
@@ -358,7 +362,7 @@ if (isset($_POST["emailcheck"])) {
                         }
                     }
                 }
-                ajax.send("fn=" + fn + "&ln=" + ln + "&e=" + e + "&pn=" + p + "&r=" + r + "&p=" + p1 + "&dob=" + dob + "&dep=" + dept + "&gen=" + gender + "&hobby=" + checkedValue);
+                ajax.send("fn=" + fn + "&ln=" + ln + "&e=" + e + "&pn=" + p + "&r=" + r + "&p=" + p1 + "&dob=" + dob + "&dep=" + dept + "&gen=" + gender + "&hobby=" + checkedValue + "&country=" + country + "&state=" + state);
             }
 
 
@@ -378,6 +382,32 @@ if (isset($_POST["emailcheck"])) {
                 document.getElementById(nextId).disabled = false;
 
 
+        }
+
+        function populate(s1,s2)
+        {
+            var s1 = document.getElementById(s1);
+            var s2 = document.getElementById(s2);
+            s2.innerHTML = "";
+            if(s1.value=="india")
+            {
+                var optionArray = ["wb|wb","up|up","rajasthan|rajasthan","maharashtra|maharashtra"];
+            }
+            else if(s1.value == "usa"){
+                var optionArray = ["california|california","florida|florida","texas|texas"];
+            }
+            else if(s1.value == "uk"){
+                var optionArray = ["scotland|scotland","wales|wales"];
+            }
+
+            for(var option in optionArray)
+            {
+                var pair = optionArray[option].split("|");
+                var newOption = document.createElement('option');
+                newOption.value = pair[0];
+                newOption.innerHTML = pair[1];
+                s2.options.add(newOption);
+            }
         }
 
 
@@ -406,10 +436,6 @@ if (isset($_POST["emailcheck"])) {
             <div id="navbar" class="collapse navbar-collapse">
                 <ul class="nav navbar-nav">
                     <li class="active"><a href="index.php">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="blog.html">Blog</a></li>
-                    <li><a href="contact.html">Contact</a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-sub pull-right">
                     <?php
@@ -556,7 +582,24 @@ if (isset($_POST["emailcheck"])) {
             <div class="col-sm-2"></div>
         </div>
         <br>
-
+        <div class="row">
+            <div class="col-sm-2"></div>
+            <div class="col-sm-4">
+                <div class="caption">chose country:</div>
+                <select class="input" id="slct1" name="slct1" onchange="populate(this.id,'slct2')">
+                    <option value=""></option>
+                    <option value="india">India</option>
+                    <option value="usa">USA</option>
+                    <option value="uk">UK</option>
+                </select>
+            </div>
+            <div class="col-sm-4">
+                <div class="caption">Choose State</div>
+                <select id="slct2" name="slct2" class="input">
+                </select>
+            </div>
+            <div class="col-sm-2"></div>
+        </div>
         <div class="row">
             <div class="col-sm-2"></div>
             <div class="col-sm-4">
